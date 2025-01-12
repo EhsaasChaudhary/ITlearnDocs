@@ -1,0 +1,108 @@
+# Project Information
+site_name: ITLearn
+site_url: https://ITleans
+site_description: A comprehensive guide to IT concepts and technologies.
+site_author: Ehsass Chaudhary
+
+# Theme Configuration
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep-purple
+      accent: cyan
+  features:
+    - toggle  # Light/dark mode toggle
+    - navigation.tabs
+    - navigation.expand
+    - search.highlight
+    - toc.integrate
+    - content.code.annotate
+  footer:
+    content: |
+      <p>Made with ❤ using <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.</p>
+  # logo:
+  #   light: assets/images/logo-light.png  # Custom logo for light mode
+  #   dark: assets/images/logo-dark.png    # Custom logo for dark mode
+  # favicon: assets/images/favicon.ico  # Favicon for the site
+
+# Navigation Structure
+nav:
+  - Docker:
+      - Docker File: Docker/Docker-file.md
+  - Git & GitHub:
+      - Git Commands: Git & Github/git-commands.md
+      - GitHub Repo Commands: Git & Github/github-repo-commands.md
+      - Git Ignore: Git & Github/gitignore.md
+      - Git Concepts: Git & Github/git_concepts.md
+      - SSH Steps: Git & Github/ssh-steps.md
+  - Linux Commands:
+      - Basic Commands: Linux Commands/basic-commands.md
+      - File Owner Permission: Linux Commands/File-owner-permission.md
+      - File Redirection & Piping: Linux Commands/file-redirection-piping.md
+      - Linux File Operations: Linux Commands/linux-file_ops.md
+      - Process Management: Linux Commands/process-management.md
+      - Text Processing: Linux Commands/text-processing.md
+  - Networking Concepts:
+      - DNS: NetWorking Concepts/dns.md
+      - FTP, SMTP, TCP: NetWorking Concepts/ftp-smtp-tcp.md
+      - HTTPS & HTTP: NetWorking Concepts/https&http.md
+      - IP Addressing: NetWorking Concepts/ip_addressing.md
+      - Subnetting: NetWorking Concepts/subnetting.md
+      - VPN, SSH, Firewall, LDAP: NetWorking Concepts/vpn-ssh-firewall-ldap.md
+
+# Plugins
+plugins:
+  - search  # Built-in search functionality
+  # - mkdocs-awesome-pages-plugin:  # Automate navigation structure
+  #     collapse_single_pages: true
+  # - mkdocs-static-i18n:  # Multi-language support
+  #     default_language: en
+  # - mkdocs-minify-plugin:  # Minifies HTML, CSS, and JS for faster load times
+  # - mkdocs-redirects:  # Allows redirects for moved pages
+  # - mkdocs-git-revision-date-localized-plugin:  # Adds "last updated" timestamps
+  #     enabled: true
+
+# Markdown Extensions
+markdown_extensions:
+  - toc:
+      permalink: true  # Adds a permalink to headers
+  - admonition  # Notes, warnings, and tips
+  - footnotes  # For additional details
+  - codehilite:
+      guess_lang: false  # Syntax highlighting for code blocks
+  - pymdownx.superfences  # Advanced fenced code block syntax
+  - pymdownx.details  # Add collapsible sections
+  - pymdownx.tabbed  # Tabbed content sections
+  - pymdownx.emoji  # Emoji support
+  - pymdownx.tasklist  # Task lists with checkboxes
+  - pymdownx.highlight  # Highlight text with ==text==
+
+# Custom Icons for Theme Toggle
+extra:
+  toggle:
+    light: material/white-balance-sunny  # Light mode icon
+    dark: material/weather-night         # Dark mode icon
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/EhsaasChaudhary/ITLearnings
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/Ehsaas-Chaudhary
+  copyright: "© 2025 ITLearn"  # Copyright notice
+
+# Custom CSS and JS
+# extra_css:
+#   - styles/extra.css  # Custom styles
+# extra_javascript:
+#   - scripts/custom.js  # Custom scripts
+
+# Site Settings
+use_directory_urls: true  # Use clean URLs (no .html)
+
+# Deployment Settings
+site_dir: site  # Directory for the built site
