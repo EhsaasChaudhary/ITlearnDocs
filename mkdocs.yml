@@ -33,6 +33,7 @@ theme:
 
 # Navigation Structure
 nav:
+  - Home: index.md
   - Docker:
       - Docker File: Docker/Docker-file.md
   - Git & GitHub:
