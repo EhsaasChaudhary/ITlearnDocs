@@ -1,0 +1,2720 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to IT concepts and technologies.">
+      
+      
+        <meta name="author" content="Ehsass Chaudhary">
+      
+      
+        <link rel="canonical" href="https://ITleans/Git%20%26%20Github/github-repo-commands/">
+      
+      
+        <link rel="prev" href="../git-commands/">
+      
+      
+        <link rel="next" href="../gitignore/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>GitHub Repo Commands - ITLearn</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#step-by-step-guide-to-push-files-to-a-remote-git-repository" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ITLearn" class="md-header__button md-logo" aria-label="ITLearn" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ITLearn
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GitHub Repo Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Docker/Docker-file/" class="md-tabs__link">
+          
+  
+  Docker
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../git-commands/" class="md-tabs__link">
+          
+  
+  Git & GitHub
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Linux%20Commands/basic-commands/" class="md-tabs__link">
+          
+  
+  Linux Commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../NetWorking%20Concepts/dns/" class="md-tabs__link">
+          
+  
+  Networking Concepts
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ITLearn" class="md-nav__button md-logo" aria-label="ITLearn" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ITLearn
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Docker
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker/Docker-file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker File
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Git & GitHub
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Git & GitHub
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GitHub Repo Commands
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    GitHub Repo Commands
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#optional-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-initialize-a-git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Initialize a Git Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-add-files-to-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Add Files to the Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-commit-the-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Commit the Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-add-the-remote-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Add the Remote Repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Add the Remote Repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-for-git-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options for git remote
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-git-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Git Branch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Git Branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-for-git-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options for git branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Git Push
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Git Push">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-for-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options for git push
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-git-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Git Tags
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Git Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listing Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushing-tags-to-a-remote-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushing Tags to a Remote Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-out-a-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Out a Tag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-git-show" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Git Show
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Git Show">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-git-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Git Switch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Git Switch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-git-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Git Restore
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Git Restore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-git-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Git Merge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Git Merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-git-rebase" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Git Rebase
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Git Rebase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-git-stash" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Git Stash
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Git Stash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-git-pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Git Pull
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Git Pull">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-git-fetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Git Fetch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Git Fetch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-git-clone" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Git Clone
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Git Clone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-how-to-stop-tracking-files-with-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. How to Stop Tracking Files with .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-fix-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Fix the Issue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Fix the Issue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-stop-tracking-the-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Stop Tracking the Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-commit-the-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Commit the Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-verify-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Verify .gitignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-check-if-log-files-are-being-ignored" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Check if .log Files Are Being Ignored
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitignore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git Ignore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssh-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SSH Steps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linux Commands
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/basic-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/File-owner-permission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Owner Permission
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/file-redirection-piping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Redirection & Piping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/linux-file_ops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux File Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/process-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Process Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/text-processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text Processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Networking Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Networking Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/dns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/ftp-smtp-tcp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FTP, SMTP, TCP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/https%26http/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTPS & HTTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/ip_addressing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IP Addressing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/subnetting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Subnetting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/vpn-ssh-firewall-ldap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPN, SSH, Firewall, LDAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="step-by-step-guide-to-push-files-to-a-remote-git-repository">Step-by-Step Guide to Push Files to a Remote Git Repository<a class="headerlink" href="#step-by-step-guide-to-push-files-to-a-remote-git-repository" title="Permanent link">&para;</a></h1>
+<h2 id="optional-steps">Optional Steps<a class="headerlink" href="#optional-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li>If you haven't configured your Git username and email, use the following commands before committing:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;your.email@example.com&quot;</span>
+</code></pre></div></li>
+</ul>
+<h2 id="1-initialize-a-git-repository">1. Initialize a Git Repository<a class="headerlink" href="#1-initialize-a-git-repository" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
+</code></pre></div>
+This command initializes a new Git repository in the current directory.</p>
+<h2 id="2-add-files-to-the-repository">2. Add Files to the Repository<a class="headerlink" href="#2-add-files-to-the-repository" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
+</code></pre></div>
+This command stages all the files in your directory for a commit.</p>
+<h2 id="3-commit-the-files">3. Commit the Files<a class="headerlink" href="#3-commit-the-files" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+</code></pre></div>
+This command commits your staged files with a message describing the changes.</p>
+<h2 id="4-add-the-remote-repository">4. Add the Remote Repository<a class="headerlink" href="#4-add-the-remote-repository" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>git@github.com:EhsaasChaudhary/dfdf.git
+</code></pre></div>
+This links your local repository to a remote repository hosted on GitHub.</p>
+<h3 id="options-for-git-remote">Options for <code>git remote</code><a class="headerlink" href="#options-for-git-remote" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>git remote -v</code>: Lists the remotes and their URLs.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>-v
+</code></pre></div></li>
+<li><code>git remote rename &lt;old-name&gt; &lt;new-name&gt;</code>: Renames a remote.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>rename<span class="w"> </span>origin<span class="w"> </span>upstream
+</code></pre></div></li>
+<li><code>git remote remove &lt;name&gt;</code>: Removes a remote.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>remove<span class="w"> </span>origin
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="5-git-branch">5. Git Branch<a class="headerlink" href="#5-git-branch" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+</code></pre></div>
+This command renames the default branch to <code>main</code>.</p>
+<h3 id="options-for-git-branch">Options for <code>git branch</code><a class="headerlink" href="#options-for-git-branch" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>git branch -a</code>: Lists all branches, including remote branches.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>branch<span class="w"> </span>-a
+</code></pre></div></li>
+<li><code>git branch -d &lt;branch&gt;</code>: Deletes a local branch.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>feature-branch
+</code></pre></div></li>
+<li><code>git branch --set-upstream-to=&lt;remote&gt;/&lt;branch&gt;</code>: Sets upstream tracking for a branch.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>branch<span class="w"> </span>--set-upstream-to<span class="o">=</span>origin/main
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="6-git-push">6. Git Push<a class="headerlink" href="#6-git-push" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Push the Code to the Remote Repository
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+This command pushes the changes in your local <code>main</code> branch to the <code>main</code> branch of the remote repository and sets the remote as the default upstream.</li>
+</ul>
+<h3 id="options-for-git-push">Options for <code>git push</code><a class="headerlink" href="#options-for-git-push" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>-f</code>: Forces the push, overwriting changes.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-f
+</code></pre></div></li>
+<li><code>--tags</code>: Pushes all tags to the remote repository.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>--tags
+</code></pre></div></li>
+<li><code>--delete &lt;remote&gt;/&lt;branch&gt;</code>: Deletes a branch on the remote repository.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>--delete<span class="w"> </span>feature-branch
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="7-git-tags">7. Git Tags<a class="headerlink" href="#7-git-tags" title="Permanent link">&para;</a></h2>
+<p>Tags are used in Git to mark specific points in a repository's history, often used to indicate release versions (e.g., <code>v1.0</code>, <code>v2.1</code>). Tags are immutable references to commits.</p>
+<h3 id="types-of-tags">Types of Tags<a class="headerlink" href="#types-of-tags" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Lightweight Tags</strong>: These are simple pointers to a commit, without any additional metadata.
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>&lt;tagname&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>v1.0
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Annotated Tags</strong>: These are stored as full objects in the Git database and include metadata like the tagger's name, email, and date. Annotated tags are recommended for public releases.
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>-a<span class="w"> </span>&lt;tagname&gt;<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Tag message&quot;</span>
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>-a<span class="w"> </span>v1.0<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial release&quot;</span>
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="listing-tags">Listing Tags<a class="headerlink" href="#listing-tags" title="Permanent link">&para;</a></h3>
+<p>To see all tags in the repository:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag
+</code></pre></div></p>
+<h3 id="deleting-tags">Deleting Tags<a class="headerlink" href="#deleting-tags" title="Permanent link">&para;</a></h3>
+<p>To delete a tag locally:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>-d<span class="w"> </span>&lt;tagname&gt;
+</code></pre></div></p>
+<p>To delete a tag remotely:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>--delete<span class="w"> </span>&lt;tagname&gt;
+</code></pre></div></p>
+<h3 id="pushing-tags-to-a-remote-repository">Pushing Tags to a Remote Repository<a class="headerlink" href="#pushing-tags-to-a-remote-repository" title="Permanent link">&para;</a></h3>
+<p>To push a single tag:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>&lt;tagname&gt;
+</code></pre></div></p>
+<p>To push all tags:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>--tags
+</code></pre></div></p>
+<h3 id="checking-out-a-tag">Checking Out a Tag<a class="headerlink" href="#checking-out-a-tag" title="Permanent link">&para;</a></h3>
+<p>While tags cannot be directly modified, you can check out a tag to view its associated commit:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>&lt;tagname&gt;
+</code></pre></div></p>
+<hr />
+<h2 id="8-git-show">8. Git Show<a class="headerlink" href="#8-git-show" title="Permanent link">&para;</a></h2>
+<p>The <code>git show</code> command is used to display detailed information about Git objects such as commits, tags, or trees. It is commonly used to inspect the details of a specific commit.</p>
+<h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>&lt;object&gt;
+</code></pre></div>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Viewing a Commit</strong>: Displays details of a commit including the author, date, commit message, and changes made.
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Viewing a Tag</strong>: Shows information about a specific tag, including its metadata and associated commit.
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>&lt;tagname&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Viewing a File at a Specific Commit</strong>: Outputs the content of a file as it existed in a given commit.
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>&lt;commit-hash&gt;:&lt;filepath&gt;
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>--name-only</code>: Shows only the names of changed files in a commit.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>--name-only<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--name-status</code>: Displays the names of changed files along with their status (added, modified, deleted).
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>--name-status<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--pretty</code>: Formats the output. For example:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>--pretty<span class="o">=</span>oneline<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--stat</code>: Shows a summary of changes including file names, insertions, and deletions.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>--stat<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Show the latest commit:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show
+</code></pre></div></p>
+</li>
+<li>
+<p>Show details of a specific commit:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>4f2e5a7
+</code></pre></div></p>
+</li>
+<li>
+<p>Show a specific file from a commit:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>show<span class="w"> </span>4f2e5a7:src/main.java
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<p>The <code>git show</code> command is a powerful tool for inspecting repository history and understanding changes. It combines commit and diff information for a holistic view of the repository state.</p>
+<hr />
+<h2 id="9-git-switch">9. Git Switch<a class="headerlink" href="#9-git-switch" title="Permanent link">&para;</a></h2>
+<p>The <code>git switch</code> command is a modern replacement for branch-related operations previously handled by <code>git checkout</code>. It simplifies switching branches and creating new branches.</p>
+<h3 id="syntax_1">Syntax<a class="headerlink" href="#syntax_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;branch-name&gt;
+</code></pre></div>
+<h3 id="common-use-cases">Common Use Cases<a class="headerlink" href="#common-use-cases" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Switching to an Existing Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>&lt;branch-name&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>main
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Creating and Switching to a New Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>&lt;new-branch-name&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>feature/login-module
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Switching to a Remote-Tracking Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>--track<span class="w"> </span>&lt;remote-branch&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>--track<span class="w"> </span>origin/feature-xyz
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="options_1">Options<a class="headerlink" href="#options_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>-c</code>: Creates a new branch and switches to it.</li>
+<li><code>--create</code>: Synonym for <code>-c</code>.</li>
+<li><code>--track</code>: Creates a new branch to track a remote branch.</li>
+<li><code>--detach</code>: Switches to a branch in a detached HEAD state.</li>
+<li><code>--discard-changes</code>: Discards local changes when switching branches (use with caution).</li>
+</ul>
+<h3 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Switch to the <code>development</code> branch:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>development
+</code></pre></div></p>
+</li>
+<li>
+<p>Create and switch to a new branch named <code>feature-api</code>:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>feature-api
+</code></pre></div></p>
+</li>
+<li>
+<p>Switch to a remote-tracking branch:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>--track<span class="w"> </span>origin/bugfix-123
+</code></pre></div></p>
+</li>
+<li>
+<p>Switch to a branch in detached HEAD state:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>--detach<span class="w"> </span>feature-old
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>git switch</code> is available in Git 2.23 and later.</li>
+<li>Unlike <code>git checkout</code>, <code>git switch</code> focuses exclusively on branch-related operations, making it less error-prone.</li>
+<li>Use <code>git switch</code> instead of <code>git checkout</code> when working with branches for clearer intent.</li>
+</ul>
+<hr />
+<h2 id="10-git-restore">10. Git Restore<a class="headerlink" href="#10-git-restore" title="Permanent link">&para;</a></h2>
+<p>The <code>git restore</code> command is used to restore files or revert changes in the working directory and staging area. It was introduced in Git 2.23 as part of the effort to separate the functionality of <code>git checkout</code> into more focused commands.</p>
+<h3 id="syntax_2">Syntax<a class="headerlink" href="#syntax_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;file-path&gt;
+</code></pre></div>
+<h3 id="common-use-cases_1">Common Use Cases<a class="headerlink" href="#common-use-cases_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Restore a File to Its Last Committed State</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>&lt;file-path&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>README.md
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Unstage a File</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>&lt;file-path&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>index.html
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Restore All Files in the Repository</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Discard Changes Completely</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>--source<span class="o">=</span>HEAD<span class="w"> </span>&lt;file-path&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>--source<span class="o">=</span>HEAD<span class="w"> </span>config.yaml
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="options_2">Options<a class="headerlink" href="#options_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>--staged</code>: Unstages a file from the index (staging area) without changing the working directory.</li>
+<li><code>--source=&lt;commit&gt;</code>: Specifies the commit to restore from (default is <code>HEAD</code>).</li>
+<li><code>--worktree</code>: Restores changes in the working directory (default behavior).</li>
+<li><code>--</code>: Separates file paths from options, avoiding ambiguity.</li>
+<li><code>--patch</code> or <code>-p</code>: Allows interactive restoration of parts of a file.</li>
+</ul>
+<h3 id="examples_2">Examples<a class="headerlink" href="#examples_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Restore a single file to its committed state:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>app.js
+</code></pre></div></p>
+</li>
+<li>
+<p>Unstage a file:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>app.js
+</code></pre></div></p>
+</li>
+<li>
+<p>Discard all local changes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+<li>
+<p>Interactively restore hunks in a file:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>-p<span class="w"> </span>app.js
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_2">Notes<a class="headerlink" href="#notes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>git restore</code> is available in Git 2.23 and later.</li>
+<li>Use this command instead of <code>git checkout</code> for file-specific operations for better clarity.</li>
+<li>Be cautious when discarding changes as they cannot be recovered unless committed.</li>
+</ul>
+<hr />
+<h2 id="11-git-merge">11. Git Merge<a class="headerlink" href="#11-git-merge" title="Permanent link">&para;</a></h2>
+<p>The <code>git merge</code> command is used to combine the changes from one branch into the current branch. It is a key tool for integrating work in Git, often used in collaborative workflows.</p>
+<h3 id="syntax_3">Syntax<a class="headerlink" href="#syntax_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;branch&gt;
+</code></pre></div>
+<h3 id="common-use-cases_2">Common Use Cases<a class="headerlink" href="#common-use-cases_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Merge a Branch into the Current Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>&lt;branch-name&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>feature-branch
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Merge with a Commit Message</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Merge message&quot;</span><span class="w"> </span>&lt;branch-name&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Merging feature into main&quot;</span><span class="w"> </span>feature-branch
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Abort a Merge</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--abort
+</code></pre></div>
+   Use this if there are conflicts you do not want to resolve.</p>
+</li>
+</ol>
+<h3 id="options_3">Options<a class="headerlink" href="#options_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>--no-ff</code>: Creates a merge commit even if a fast-forward merge is possible.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--no-ff<span class="w"> </span>&lt;branch&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--squash</code>: Combines all changes into a single commit.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--squash<span class="w"> </span>&lt;branch&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--abort</code>: Cancels the merge process.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--abort
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--commit</code>: Completes the merge with a merge commit.</p>
+</li>
+<li>
+<p><code>-m &lt;message&gt;</code>: Adds a custom message to the merge commit.</p>
+</li>
+<li>
+<p><code>--strategy=&lt;strategy&gt;</code>: Specifies a merge strategy (e.g., <code>recursive</code>, <code>ours</code>, <code>theirs</code>).
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--strategy<span class="o">=</span>recursive<span class="w"> </span>&lt;branch&gt;
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="examples_3">Examples<a class="headerlink" href="#examples_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Merge <code>development</code> into <code>main</code>:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>development
+</code></pre></div></p>
+</li>
+<li>
+<p>Merge with a commit message:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Merging hotfix&quot;</span><span class="w"> </span>hotfix-branch
+</code></pre></div></p>
+</li>
+<li>
+<p>Perform a squash merge:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--squash<span class="w"> </span>feature-enhancement
+</code></pre></div></p>
+</li>
+<li>
+<p>Abort an ongoing merge:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--abort
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_3">Notes<a class="headerlink" href="#notes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Resolve conflicts manually if they arise during a merge. Use <code>git status</code> to see the conflicting files.</li>
+<li>After resolving conflicts, complete the merge using:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit
+</code></pre></div></li>
+<li>Avoid merging too frequently without testing to maintain repository stability.</li>
+</ul>
+<hr />
+<h2 id="12-git-rebase">12. Git Rebase<a class="headerlink" href="#12-git-rebase" title="Permanent link">&para;</a></h2>
+<p>The <code>git rebase</code> command is used to reapply commits from one branch onto another, effectively rewriting the commit history. It is commonly used to maintain a linear project history and integrate changes more cleanly.</p>
+<h3 id="syntax_4">Syntax<a class="headerlink" href="#syntax_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;upstream&gt;
+</code></pre></div>
+<h3 id="common-use-cases_3">Common Use Cases<a class="headerlink" href="#common-use-cases_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Rebase the Current Branch onto Another Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>&lt;branch&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>main
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Interactive Rebase to Edit Commit History</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>&lt;commit&gt;
+</code></pre></div>
+   Example:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>HEAD~3
+</code></pre></div>
+   This opens an editor where you can modify, reorder, or squash commits.</p>
+</li>
+<li>
+<p><strong>Continue a Stopped Rebase</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--continue
+</code></pre></div>
+   Use this after resolving conflicts during a rebase.</p>
+</li>
+<li>
+<p><strong>Abort a Rebase</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--abort
+</code></pre></div>
+   This restores the branch to its original state before the rebase started.</p>
+</li>
+</ol>
+<h3 id="options_4">Options<a class="headerlink" href="#options_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>-i</code> or <code>--interactive</code>: Starts an interactive rebase session, allowing you to edit the commit history.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>&lt;commit&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--onto &lt;new-base&gt;</code>: Rebases the branch onto a different base.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--onto<span class="w"> </span>&lt;new-base&gt;<span class="w"> </span>&lt;upstream&gt;<span class="w"> </span>&lt;branch&gt;
+</code></pre></div>
+  Example:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--onto<span class="w"> </span>main<span class="w"> </span>feature-branch-old<span class="w"> </span>feature-branch-new
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--continue</code>: Continues the rebase after conflicts are resolved.</p>
+</li>
+<li>
+<p><code>--skip</code>: Skips the current conflicting commit and proceeds with the rebase.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--skip
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--abort</code>: Aborts the rebase and restores the branch to its original state.</p>
+</li>
+<li>
+<p><code>--preserve-merges</code>: Preserves merge commits during a rebase.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--preserve-merges<span class="w"> </span>main
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--no-ff</code>: Ensures that no fast-forward merges are performed during the rebase.</p>
+</li>
+</ul>
+<h3 id="examples_4">Examples<a class="headerlink" href="#examples_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Rebase the current branch onto <code>development</code>:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>development
+</code></pre></div></p>
+</li>
+<li>
+<p>Start an interactive rebase to modify the last 5 commits:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>HEAD~5
+</code></pre></div></p>
+</li>
+<li>
+<p>Rebase <code>feature-branch</code> onto <code>main</code>:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--onto<span class="w"> </span>main<span class="w"> </span>development<span class="w"> </span>feature-branch
+</code></pre></div></p>
+</li>
+<li>
+<p>Skip a conflicting commit during a rebase:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--skip
+</code></pre></div></p>
+</li>
+<li>
+<p>Abort a rebase and undo all changes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--abort
+</code></pre></div></p>
+</li>
+</ul>
+<p>### Notes
+- Use <code>git rebase</code> with caution when working on shared branches as it rewrites commit history.
+- To avoid conflicts, ensure your branch is up to date with the target branch before rebasing:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>origin
+git<span class="w"> </span>rebase<span class="w"> </span>origin/main
+</code></pre></div>
+- After rebasing, force-push the changes to the remote repository:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>--force
+</code></pre></div></p>
+<hr />
+<h2 id="13-git-stash">13. Git Stash<a class="headerlink" href="#13-git-stash" title="Permanent link">&para;</a></h2>
+<p>The <code>git stash</code> command temporarily shelves changes in your working directory so you can work on something else without committing the changes.</p>
+<h3 id="syntax_5">Syntax<a class="headerlink" href="#syntax_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
+</code></pre></div>
+<h3 id="common-use-cases_4">Common Use Cases<a class="headerlink" href="#common-use-cases_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Save Changes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash
+</code></pre></div>
+   Temporarily saves all changes in the working directory.</p>
+</li>
+<li>
+<p><strong>List Stashes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>list
+</code></pre></div>
+   Displays a list of all saved stashes.</p>
+</li>
+<li>
+<p><strong>Apply Stashed Changes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>apply
+</code></pre></div>
+   Reapplies the most recent stash to your working directory.</p>
+</li>
+<li>
+<p><strong>Apply and Drop Stash</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>pop
+</code></pre></div>
+   Reapplies the most recent stash and removes it from the stash list.</p>
+</li>
+<li>
+<p><strong>Drop a Specific Stash</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w"> </span>stash@<span class="o">{</span>index<span class="o">}</span>
+</code></pre></div>
+   Removes a specific stash from the list.</p>
+</li>
+<li>
+<p><strong>Clear All Stashes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>clear
+</code></pre></div>
+   Deletes all saved stashes.</p>
+</li>
+</ol>
+<h3 id="options_5">Options<a class="headerlink" href="#options_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>--keep-index</code>: Stashes only the changes in the working directory, preserving the staged changes.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--keep-index
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--include-untracked</code>: Includes untracked files in the stash.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--include-untracked
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--all</code>: Includes all files (tracked, untracked, and ignored) in the stash.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--all
+</code></pre></div></p>
+</li>
+<li>
+<p><code>list</code>: Displays all stashed changes.</p>
+</li>
+<li>
+<p><code>pop</code>: Applies the stash and removes it from the stash list.</p>
+</li>
+<li>
+<p><code>apply</code>: Reapplies the stash without removing it from the stash list.</p>
+</li>
+<li>
+<p><code>drop</code>: Deletes a specific stash by its index.</p>
+</li>
+</ul>
+<h3 id="examples_5">Examples<a class="headerlink" href="#examples_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Save changes and include untracked files:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--include-untracked
+</code></pre></div></p>
+</li>
+<li>
+<p>Reapply the most recent stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>apply
+</code></pre></div></p>
+</li>
+<li>
+<p>Remove all stashes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>clear
+</code></pre></div></p>
+</li>
+<li>
+<p>View all stashed changes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>list
+</code></pre></div></p>
+</li>
+<li>
+<p>Apply and remove the most recent stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>pop
+</code></pre></div></p>
+</li>
+<li>
+<p>Drop a specific stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w"> </span>stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_4">Notes<a class="headerlink" href="#notes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Stashing is useful when you want to switch branches without committing your changes.</li>
+<li>You can stash specific files using:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>push<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;message&quot;</span><span class="w"> </span>&lt;file&gt;
+</code></pre></div></li>
+<li>Use <code>git stash show</code> to view the changes in a stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>show<span class="w"> </span>-p<span class="w"> </span>stash@<span class="o">{</span><span class="m">0</span><span class="o">}</span>
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="14-git-pull">14. Git Pull<a class="headerlink" href="#14-git-pull" title="Permanent link">&para;</a></h2>
+<p>The <code>git pull</code> command is used to fetch and merge changes from a remote repository into your current branch. It combines <code>git fetch</code> and <code>git merge</code> into a single command.</p>
+<h3 id="syntax_6">Syntax<a class="headerlink" href="#syntax_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>repository<span class="o">]</span><span class="w"> </span><span class="o">[</span>refspec<span class="o">]</span>
+</code></pre></div>
+<h3 id="common-use-cases_5">Common Use Cases<a class="headerlink" href="#common-use-cases_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Pull Changes from the Default Remote and Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull
+</code></pre></div>
+   Fetches and merges changes from the remote-tracking branch.</p>
+</li>
+<li>
+<p><strong>Pull Changes from a Specific Remote Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+   Fetches and merges changes from the <code>main</code> branch of the <code>origin</code> remote.</p>
+</li>
+<li>
+<p><strong>Rebase Instead of Merging</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--rebase
+</code></pre></div>
+   Fetches changes and rebases your commits on top of them.</p>
+</li>
+</ol>
+<h3 id="options_6">Options<a class="headerlink" href="#options_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>--rebase</code>: Rebase the current branch on top of the upstream branch after fetching changes.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--rebase
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--all</code>: Fetches and merges changes from all configured remotes.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--all
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--no-commit</code>: Fetches and merges changes without committing the result.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--no-commit
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--squash</code>: Creates a single squashed commit for all changes fetched.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--squash
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--no-rebase</code>: Ensures that the pull operation does not perform a rebase.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--no-rebase
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="examples_6">Examples<a class="headerlink" href="#examples_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Fetch and merge changes from the <code>develop</code> branch:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>develop
+</code></pre></div></p>
+</li>
+<li>
+<p>Rebase your branch on top of the <code>main</code> branch:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--rebase<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div></p>
+</li>
+<li>
+<p>Fetch changes from all remotes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--all
+</code></pre></div></p>
+</li>
+<li>
+<p>Perform a pull without committing the merge result:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--no-commit
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_5">Notes<a class="headerlink" href="#notes_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>If there are conflicts during the merge, resolve them and then commit the changes.</li>
+<li>To pull changes from a specific remote and branch while rebasing:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--rebase<span class="w"> </span>origin<span class="w"> </span>feature-branch
+</code></pre></div></li>
+<li>Ensure your local branch is up to date before pushing changes after a pull:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="15-git-fetch">15. Git Fetch<a class="headerlink" href="#15-git-fetch" title="Permanent link">&para;</a></h2>
+<p>The <code>git fetch</code> command downloads objects and refs from another repository. Unlike <code>git pull</code>, it does not merge the changes into your current branch but updates your local tracking branches with the latest changes from the remote.</p>
+<h3 id="syntax_7">Syntax<a class="headerlink" href="#syntax_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>repository<span class="o">]</span><span class="w"> </span><span class="o">[</span>refspec<span class="o">]</span>
+</code></pre></div>
+<h3 id="common-use-cases_6">Common Use Cases<a class="headerlink" href="#common-use-cases_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Fetch Updates from the Default Remote</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch
+</code></pre></div>
+   Retrieves all updates from the remote repository without applying them to your working directory.</p>
+</li>
+<li>
+<p><strong>Fetch from a Specific Remote</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>origin
+</code></pre></div>
+   Updates the local tracking branches from the <code>origin</code> remote.</p>
+</li>
+<li>
+<p><strong>Fetch a Specific Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+   Fetches updates only for the <code>main</code> branch from the <code>origin</code> remote.</p>
+</li>
+</ol>
+<h3 id="options_7">Options<a class="headerlink" href="#options_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>--all</code>: Fetches updates from all remotes.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--all
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--dry-run</code>: Displays what would be fetched without actually fetching the updates.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--dry-run
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--prune</code>: Removes local references to remote branches that no longer exist.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--prune
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--tags</code>: Fetches all tags from the remote repository.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--tags
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--depth &lt;depth&gt;</code>: Fetches a limited history of commits for shallow repositories.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="examples_7">Examples<a class="headerlink" href="#examples_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Fetch updates from all remotes and prune stale branches:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span>--prune
+</code></pre></div></p>
+</li>
+<li>
+<p>Fetch a specific branch and display details without making changes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--dry-run<span class="w"> </span>origin<span class="w"> </span>feature-branch
+</code></pre></div></p>
+</li>
+<li>
+<p>Fetch all tags:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--tags
+</code></pre></div></p>
+</li>
+<li>
+<p>Fetch updates with a shallow clone:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_6">Notes<a class="headerlink" href="#notes_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use <code>git fetch</code> regularly to keep your tracking branches updated.</li>
+<li>Combine <code>git fetch</code> with <code>git log</code> to inspect remote changes before merging them into your local branch.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>main
+git<span class="w"> </span>log<span class="w"> </span>HEAD..origin/main
+</code></pre></div></li>
+<li>To integrate fetched changes, follow up with <code>git merge</code> or <code>git rebase</code> as appropriate.</li>
+</ul>
+<hr />
+<h2 id="16-git-clone">16. Git Clone<a class="headerlink" href="#16-git-clone" title="Permanent link">&para;</a></h2>
+<p>The <code>git clone</code> command creates a copy of an existing remote repository locally. It is commonly used to start working on an existing project.</p>
+<h3 id="syntax_8">Syntax<a class="headerlink" href="#syntax_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;repository&gt;<span class="w"> </span><span class="o">[</span>directory<span class="o">]</span>
+</code></pre></div>
+<h3 id="common-use-cases_7">Common Use Cases<a class="headerlink" href="#common-use-cases_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Clone a Repository into a New Directory</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div>
+   Creates a local copy of the repository.</p>
+</li>
+<li>
+<p><strong>Clone into a Specific Directory</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/user/repo.git<span class="w"> </span>my-folder
+</code></pre></div>
+   Clones the repository into a folder named <code>my-folder</code>.</p>
+</li>
+<li>
+<p><strong>Clone Only a Specific Branch</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>main<span class="w"> </span>--single-branch<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div>
+   Clones only the <code>main</code> branch.</p>
+</li>
+</ol>
+<h3 id="options_8">Options<a class="headerlink" href="#options_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>-b</code> or <code>--branch</code>: Clone a specific branch instead of the default branch.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>feature-branch<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--single-branch</code>: Clone only the history of the specified branch.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--single-branch<span class="w"> </span>-b<span class="w"> </span>main<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--depth</code>: Perform a shallow clone with a limited commit history.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--recurse-submodules</code>: Clone submodules along with the repository.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--mirror</code>: Clone a repository for use as a mirror, copying all refs and branches.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--mirror<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="examples_8">Examples<a class="headerlink" href="#examples_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Clone a repository into the current directory:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/user/repo.git<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+<li>
+<p>Clone a specific branch with limited commit history:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="w"> </span><span class="m">10</span><span class="w"> </span>-b<span class="w"> </span>main<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+<li>
+<p>Clone a repository along with its submodules:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/user/repo.git
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes_7">Notes<a class="headerlink" href="#notes_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>After cloning, you can navigate into the repository and begin working:
+  <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>repo
+</code></pre></div></li>
+<li>Ensure that you have the necessary permissions to clone private repositories.</li>
+<li>Use <code>git remote -v</code> to verify the remote URLs of the cloned repository.</li>
+</ul>
+<hr />
+<h2 id="17-how-to-stop-tracking-files-with-gitignore">17. How to Stop Tracking Files with .gitignore<a class="headerlink" href="#17-how-to-stop-tracking-files-with-gitignore" title="Permanent link">&para;</a></h2>
+<p>If <code>.gitignore</code> isn't preventing <code>.log</code> files from being tracked, it's likely because the files were already being tracked by Git before you added the rule to <code>.gitignore</code>. Follow these steps to fix the issue.</p>
+<hr />
+<h2 id="steps-to-fix-the-issue">Steps to Fix the Issue<a class="headerlink" href="#steps-to-fix-the-issue" title="Permanent link">&para;</a></h2>
+<h3 id="1-stop-tracking-the-files">1. Stop Tracking the Files<a class="headerlink" href="#1-stop-tracking-the-files" title="Permanent link">&para;</a></h3>
+<p>Run the following command to untrack all <code>.log</code> files that are already being tracked by Git:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>*.log
+</code></pre></div>
+<p>This removes the <code>.log</code> files from Git's index but keeps them in your working directory.</p>
+<h3 id="2-commit-the-changes">2. Commit the Changes<a class="headerlink" href="#2-commit-the-changes" title="Permanent link">&para;</a></h3>
+<p>After running the <code>git rm --cached</code> command, commit the changes to update the repository:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Stop tracking .log files&quot;</span>
+</code></pre></div>
+<h3 id="3-verify-gitignore">3. Verify <code>.gitignore</code><a class="headerlink" href="#3-verify-gitignore" title="Permanent link">&para;</a></h3>
+<p>Ensure your <code>.gitignore</code> file is correctly configured. For <code>.log</code> files, add the following line to the file:</p>
+<div class="highlight"><pre><span></span><code>*.log
+</code></pre></div>
+<p>This tells Git to ignore all files with a <code>.log</code> extension.</p>
+<h3 id="4-check-if-log-files-are-being-ignored">4. Check if <code>.log</code> Files Are Being Ignored<a class="headerlink" href="#4-check-if-log-files-are-being-ignored" title="Permanent link">&para;</a></h3>
+<p>Use the <code>git check-ignore</code> command to verify that <code>.log</code> files are being ignored:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>check-ignore<span class="w"> </span>-v<span class="w"> </span>somefile.log
+</code></pre></div>
+<p>Replace <code>somefile.log</code> with the name of an actual <code>.log</code> file in your project.</p>
+<hr />
+<h2 id="additional-notes">Additional Notes<a class="headerlink" href="#additional-notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>If <code>.log</code> Files Are Committed to Remote:</strong>
+  If you have already pushed <code>.log</code> files to the remote repository, they will remain there even after being removed locally. To completely remove them from the repository's history, you can rewrite the repository history using tools like <code>git filter-repo</code> or <code>git filter-branch</code>.</p>
+</li>
+<li>
+<p><strong>Conflicts with Other <code>.gitignore</code> Files:</strong>
+  If the <code>.gitignore</code> rule doesn’t seem to work, ensure there are no conflicts with other <code>.gitignore</code> files or rules in parent directories.</p>
+</li>
+</ul>
+<hr />
+<p>Following these steps ensures that <code>.log</code> files are no longer tracked by Git while keeping them locally in your working directory.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/EhsaasChaudhary/ITLearnings" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/Ehsaas-Chaudhary" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toggle", "navigation.tabs", "navigation.expand", "search.highlight", "toc.integrate", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
