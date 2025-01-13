@@ -60,14 +60,14 @@ nav:
 # Plugins
 plugins:
   - search  # Built-in search functionality
-  # - mkdocs-awesome-pages-plugin:  # Automate navigation structure
-  #     collapse_single_pages: true
-  # - mkdocs-static-i18n:  # Multi-language support
-  #     default_language: en
-  # - mkdocs-minify-plugin:  # Minifies HTML, CSS, and JS for faster load times
-  # - mkdocs-redirects:  # Allows redirects for moved pages
-  # - mkdocs-git-revision-date-localized-plugin:  # Adds "last updated" timestamps
-  #     enabled: true
+  - mkdocs-awesome-pages-plugin:  # Automate navigation structure
+      collapse_single_pages: true
+  - mkdocs-static-i18n:  # Multi-language support
+      default_language: en
+  - mkdocs-minify-plugin:  # Minifies HTML, CSS, and JS for faster load times
+  - mkdocs-redirects:  # Allows redirects for moved pages
+  - mkdocs-git-revision-date-localized-plugin:  # Adds "last updated" timestamps
+      enabled: true
 
 # Markdown Extensions
 markdown_extensions:
