@@ -12,14 +12,14 @@
         <meta name="author" content="Ehsass Chaudhary">
       
       
-        <link rel="canonical" href="https://ITleans/Docker/Docker-file/">
+        <link rel="canonical" href="https://ITleans/Git%20%26%20Github/Undo-Git-Changes/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.2.5">
     
     
       
-        <title>Docker File - ITLearn</title>
+        <title>Undo Git Changes - ITLearn</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-basics" class="md-skip">
+        <a href="#git-revert" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker File
+              Undo Git Changes
             
           </span>
         </div>
@@ -188,15 +188,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Docker/Docker-file/" class="md-tabs__link">
         Docker
       </a>
     </li>
@@ -206,13 +204,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Git%20%26%20Github/git_concepts/" class="md-tabs__link">
+      <a href="../git_concepts/" class="md-tabs__link md-tabs__link--active">
         Git & GitHub
       </a>
     </li>
@@ -306,14 +306,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -334,182 +332,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker File
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Docker/Docker-file/" class="md-nav__link">
         Docker File
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-docker" class="md-nav__link">
-    Why Use Docker?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-components-of-docker" class="md-nav__link">
-    Key Components of Docker
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Components of Docker">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-docker-engine" class="md-nav__link">
-    1. Docker Engine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-docker-images" class="md-nav__link">
-    2. Docker Images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-docker-containers" class="md-nav__link">
-    3. Docker Containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-dockerfile" class="md-nav__link">
-    4. Dockerfile
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-docker-compose" class="md-nav__link">
-    5. Docker Compose
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verify-installation" class="md-nav__link">
-    Verify installation:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-docker-commands" class="md-nav__link">
-    Common Docker Commands
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Docker Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#images" class="md-nav__link">
-    Images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#containers" class="md-nav__link">
-    Containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-and-logs" class="md-nav__link">
-    Build and Logs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-commands" class="md-nav__link">
-    Other Commands
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dockerfile" class="md-nav__link">
-    Dockerfile
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    Docker Compose
-  </a>
-  
-    <nav class="md-nav" aria-label="Docker Compose">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-nodejs-and-mongodb" class="md-nav__link">
-    Example: Node.js and MongoDB
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-resources" class="md-nav__link">
-    Additional Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -527,12 +354,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -555,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/git_concepts/" class="md-nav__link">
+      <a href="../git_concepts/" class="md-nav__link">
         Git Concepts
       </a>
     </li>
@@ -569,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/Manage-Local-Changes/" class="md-nav__link">
+      <a href="../Manage-Local-Changes/" class="md-nav__link">
         Manage Local Changes
       </a>
     </li>
@@ -583,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/Repository-Setup/" class="md-nav__link">
+      <a href="../Repository-Setup/" class="md-nav__link">
         Repository Setup
       </a>
     </li>
@@ -595,11 +424,171 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/Undo-Git-Changes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Undo Git Changes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Undo Git Changes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-revert" class="md-nav__link">
+    Git Revert
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Revert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-revert_1" class="md-nav__link">
+    git revert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-it-does" class="md-nav__link">
+    What It Does:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-reset" class="md-nav__link">
+    Git Reset
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Reset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-reset_1" class="md-nav__link">
+    git reset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-it-does_1" class="md-nav__link">
+    What It Does:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage_1" class="md-nav__link">
+    Usage:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_1" class="md-nav__link">
+    Options:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-stash" class="md-nav__link">
+    Git Stash
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Stash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    Common Use Cases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_2" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -611,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/Working-With-Branches/" class="md-nav__link">
+      <a href="../Working-With-Branches/" class="md-nav__link">
         Working with Branches
       </a>
     </li>
@@ -625,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/Working-With-Remote-Repo/" class="md-nav__link">
+      <a href="../Working-With-Remote-Repo/" class="md-nav__link">
         Working with Remote Repos
       </a>
     </li>
@@ -639,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/GitIgnore/" class="md-nav__link">
+      <a href="../GitIgnore/" class="md-nav__link">
         Git Ignore
       </a>
     </li>
@@ -653,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git%20%26%20Github/ssh-steps/" class="md-nav__link">
+      <a href="../ssh-steps/" class="md-nav__link">
         SSH Steps
       </a>
     </li>
@@ -917,124 +906,228 @@
                 
 
 
-<h1 id="docker-basics">Docker Basics<a class="headerlink" href="#docker-basics" title="Permanent link">&para;</a></h1>
-<p>Docker is an open-source platform that allows you to automate the deployment of applications inside lightweight, portable containers. Containers include everything an application needs to run, such as libraries, dependencies, and configuration files.</p>
-<h2 id="why-use-docker">Why Use Docker?<a class="headerlink" href="#why-use-docker" title="Permanent link">&para;</a></h2>
+  <h1>Undo Git Changes</h1>
+
+<h2 id="git-revert">Git Revert<a class="headerlink" href="#git-revert" title="Permanent link">&para;</a></h2>
+<h3 id="git-revert_1"><code>git revert</code><a class="headerlink" href="#git-revert_1" title="Permanent link">&para;</a></h3>
+<p>The <code>git revert</code> command is used to undo changes in a Git repository by creating a new commit that reverses the changes introduced by a previous commit.</p>
+<h3 id="what-it-does">What It Does:<a class="headerlink" href="#what-it-does" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Reverts changes made by a specific commit.</li>
+<li>Creates a new commit to record the reversal.</li>
+<li>Does not alter the commit history (unlike <code>git reset</code>).</li>
+</ul>
+<h3 id="usage">Usage:<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div>
+<h3 id="options">Options:<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Revert a specific commit:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>Revert multiple commits interactively:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>-i<span class="w"> </span>&lt;commit-range&gt;
+</code></pre></div></li>
+<li>Abort a revert operation in progress:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>--abort
+</code></pre></div></li>
+<li>Revert a commit without creating a new commit (apply changes to the working directory):
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>--no-commit<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>Edit the commit message for the revert:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>--edit<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="git-reset">Git Reset<a class="headerlink" href="#git-reset" title="Permanent link">&para;</a></h2>
+<h3 id="git-reset_1"><code>git reset</code><a class="headerlink" href="#git-reset_1" title="Permanent link">&para;</a></h3>
+<p>The <code>git reset</code> command is used to undo changes in a Git repository by moving the current branch’s HEAD to a specific state, effectively resetting the repository to that point. It modifies the staging area (index) and the working directory depending on the options used. Unlike <code>git revert</code>, which creates a new commit to reverse changes, <code>git reset</code> can alter the commit history by removing commits from the current branch.</p>
+<h3 id="what-it-does_1">What It Does:<a class="headerlink" href="#what-it-does_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Moves the HEAD</strong>: It changes the current branch’s HEAD to a specific commit.</li>
+<li><strong>Modifies the Staging Area</strong>: It can modify the index (staging area) to match the new commit.</li>
+<li><strong>Modifies the Working Directory</strong>: It can update the working directory to reflect the state of the commit.</li>
+</ul>
+<h3 id="usage_1">Usage:<a class="headerlink" href="#usage_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div>
+<h3 id="options_1">Options:<a class="headerlink" href="#options_1" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Consistency Across Environments:</strong> Eliminates the "works on my machine" problem by ensuring applications run the same everywhere.</li>
-<li><strong>Resource Efficiency:</strong> Containers are lightweight compared to virtual machines.</li>
-<li><strong>Speed:</strong> Containers start quickly as they do not boot up an operating system.</li>
-<li><strong>Portability:</strong> Docker containers can run on any system with Docker installed.</li>
-<li><strong>Scalability:</strong> Simplifies scaling applications across distributed systems.</li>
+<li><strong>Soft Reset (<code>--soft</code>)</strong>:</li>
+<li>Moves the HEAD to a specified commit but <strong>keeps changes in the staging area</strong>. This allows you to amend or commit those changes later.</li>
+<li><strong>Usage</strong>:
+     <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>
+<p><strong>Use Case</strong>: If you want to undo a commit but keep the changes staged for a new commit.</p>
+</li>
+<li>
+<p><strong>Mixed Reset (<code>--mixed</code>)</strong> (default option):</p>
+</li>
+<li>Moves the HEAD to a specified commit and <strong>unstages</strong> changes (removes changes from the staging area) but keeps the modifications in the working directory.</li>
+<li><strong>Usage</strong>:
+     <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--mixed<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>
+<p><strong>Use Case</strong>: If you want to unstage changes and leave them in your working directory.</p>
+</li>
+<li>
+<p><strong>Hard Reset (<code>--hard</code>)</strong>:</p>
+</li>
+<li>Moves the HEAD to a specified commit and <strong>resets both the staging area and working directory</strong> to match the specified commit. Any uncommitted changes are lost.</li>
+<li><strong>Usage</strong>:
+     <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>
+<p><strong>Use Case</strong>: If you want to discard changes completely and reset to a specific commit. <strong>Warning</strong>: This is destructive and can lead to data loss if there are uncommitted changes.</p>
+</li>
+<li>
+<p><strong>Keep Reset (<code>--keep</code>)</strong>:</p>
+</li>
+<li>Resets the HEAD and updates the staging area to match the specified commit, but <strong>keeps changes in the working directory</strong>. If there are conflicting changes, it prevents the reset from happening.</li>
+<li><strong>Usage</strong>:
+     <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--keep<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>
+<p><strong>Use Case</strong>: If you want to reset the staging area to a previous commit but keep changes in the working directory without discarding any conflicting changes.</p>
+</li>
+<li>
+<p><strong>Merge Reset (<code>--merge</code>)</strong>:</p>
+</li>
+<li>Similar to the <code>--keep</code> option, but it allows resetting with a little more flexibility. It preserves the working directory and attempts to preserve the index (staging area), but conflicts may arise when there are changes in both the commit history and the working directory.</li>
+<li><strong>Usage</strong>:
+     <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--merge<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div></li>
+<li>
+<p><strong>Use Case</strong>: When you want to reset the branch to a specific state but want to preserve most of your current changes.</p>
+</li>
+<li>
+<p><strong>Reset to the Previous Commit</strong>:</p>
+</li>
+<li>To reset to the previous commit, you can use the shorthand <code>HEAD~1</code>:
+     <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD~1
+</code></pre></div></li>
+<li><strong>Use Case</strong>: This can be helpful to undo the most recent commit and reset your working directory and staging area.</li>
 </ol>
 <hr />
-<h2 id="key-components-of-docker">Key Components of Docker<a class="headerlink" href="#key-components-of-docker" title="Permanent link">&para;</a></h2>
-<h3 id="1-docker-engine">1. <strong>Docker Engine</strong><a class="headerlink" href="#1-docker-engine" title="Permanent link">&para;</a></h3>
-<ul>
-<li>The core component that runs and manages containers.</li>
-</ul>
-<h3 id="2-docker-images">2. <strong>Docker Images</strong><a class="headerlink" href="#2-docker-images" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Immutable, lightweight, and self-sufficient packages containing an application and its environment.</li>
-</ul>
-<h3 id="3-docker-containers">3. <strong>Docker Containers</strong><a class="headerlink" href="#3-docker-containers" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Instances of Docker images running as separate processes on the host machine.</li>
-</ul>
-<h3 id="4-dockerfile">4. <strong>Dockerfile</strong><a class="headerlink" href="#4-dockerfile" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A script with instructions to build a Docker image.</li>
-</ul>
-<h3 id="5-docker-compose">5. <strong>Docker Compose</strong><a class="headerlink" href="#5-docker-compose" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A tool to define and manage multi-container applications.</li>
-</ul>
-<hr />
-<h3 id="verify-installation">Verify installation:<a class="headerlink" href="#verify-installation" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
+<h2 id="git-stash">Git Stash<a class="headerlink" href="#git-stash" title="Permanent link">&para;</a></h2>
+<p>The <code>git stash</code> command temporarily shelves changes in your working directory so you can work on something else without committing the changes.</p>
+<h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
 </code></pre></div>
-<h3 id="common-docker-commands">Common Docker Commands<a class="headerlink" href="#common-docker-commands" title="Permanent link">&para;</a></h3>
-<h4 id="images"><strong>Images</strong><a class="headerlink" href="#images" title="Permanent link">&para;</a></h4>
-<ul>
-<li><code>docker pull &lt;image&gt;</code>: Download an image from Docker Hub.</li>
-<li><code>docker images</code>: List all downloaded images.</li>
-<li><code>docker rmi &lt;image&gt;</code>: Remove an image.</li>
-</ul>
-<h4 id="containers"><strong>Containers</strong><a class="headerlink" href="#containers" title="Permanent link">&para;</a></h4>
-<ul>
-<li><code>docker run &lt;image&gt;</code>: Run a container.</li>
-<li><code>docker ps</code>: List running containers.</li>
-<li><code>docker ps -a</code>: List all containers (including stopped ones).</li>
-<li><code>docker stop &lt;container&gt;</code>: Stop a running container.</li>
-<li><code>docker rm &lt;container&gt;</code>: Remove a container.</li>
-</ul>
-<h4 id="build-and-logs"><strong>Build and Logs</strong><a class="headerlink" href="#build-and-logs" title="Permanent link">&para;</a></h4>
-<ul>
-<li><code>docker build -t &lt;tag&gt; .</code>: Build an image from a Dockerfile.</li>
-<li><code>docker logs &lt;container&gt;</code>: View logs of a container.</li>
-</ul>
-<h4 id="other-commands"><strong>Other Commands</strong><a class="headerlink" href="#other-commands" title="Permanent link">&para;</a></h4>
-<ul>
-<li><code>docker exec -it &lt;container&gt; &lt;command&gt;</code>: Run a command inside a running container.</li>
-<li><code>docker network ls</code>: List Docker networks.</li>
-</ul>
-<hr />
-<h2 id="dockerfile">Dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">&para;</a></h2>
-<p>A <code>Dockerfile</code> is used to create a custom Docker image. Below is an example:</p>
-<div class="highlight"><pre><span></span><code><span class="c"># Use an official Node.js runtime as a base image</span>
-<span class="k">FROM</span><span class="w"> </span><span class="s">node:18</span>
-
-<span class="c"># Set the working directory inside the container</span>
-<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
-
-<span class="c"># Copy package.json and install dependencies</span>
-<span class="k">COPY</span><span class="w"> </span>package.json<span class="w"> </span>./
-<span class="k">RUN</span><span class="w"> </span>npm<span class="w"> </span>install
-
-<span class="c"># Copy the application source code</span>
-<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>./
-
-<span class="c"># Expose the application port</span>
-<span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
-
-<span class="c"># Command to run the application</span>
-<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;npm&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;run&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;dev&quot;</span><span class="p">]</span>
+<h3 id="common-use-cases">Common Use Cases<a class="headerlink" href="#common-use-cases" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Save Changes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash
 </code></pre></div>
-<p>Build the image and run the container:
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>my-node-app<span class="w"> </span>.
-docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">3000</span>:3000<span class="w"> </span>my-node-app
-</code></pre></div></p>
-<hr />
-<h2 id="docker-compose">Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
-<p>Docker Compose allows you to define and run multi-container applications. A <code>docker-compose.yml</code> file specifies the services.</p>
-<h3 id="example-nodejs-and-mongodb">Example: Node.js and MongoDB<a class="headerlink" href="#example-nodejs-and-mongodb" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">development</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
-<span class="w">      </span><span class="nt">dockerfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dockerfile.prod</span>
-<span class="w">      </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">development</span>
-<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;3000:3000&quot;</span>
-<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.:/app</span><span class="w"> </span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/app/node_modules</span><span class="w">  </span>
-<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NODE_ENV=development</span>
+   Temporarily saves all changes in the working directory.</p>
+</li>
+<li>
+<p><strong>List Stashes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>list
 </code></pre></div>
-<p>Start the application:
-<div class="highlight"><pre><span></span><code>docker-compose<span class="w"> </span>up
-</code></pre></div></p>
-<p>Stop and remove containers:
-<div class="highlight"><pre><span></span><code>docker-compose<span class="w"> </span>down
-</code></pre></div></p>
-<hr />
-<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">&para;</a></h2>
+   Displays a list of all saved stashes.</p>
+</li>
+<li>
+<p><strong>Apply Stashed Changes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>apply
+</code></pre></div>
+   Reapplies the most recent stash to your working directory.</p>
+</li>
+<li>
+<p><strong>Apply and Drop Stash</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>pop
+</code></pre></div>
+   Reapplies the most recent stash and removes it from the stash list.</p>
+</li>
+<li>
+<p><strong>Drop a Specific Stash</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w"> </span>stash@<span class="o">{</span>index<span class="o">}</span>
+</code></pre></div>
+   Removes a specific stash from the list.</p>
+</li>
+<li>
+<p><strong>Clear All Stashes</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>clear
+</code></pre></div>
+   Deletes all saved stashes.</p>
+</li>
+</ol>
+<h3 id="options_2">Options<a class="headerlink" href="#options_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://docs.docker.com/">Docker Documentation</a></li>
-<li><a href="https://hub.docker.com/">Docker Hub</a></li>
-<li><a href="https://github.com/wsargent/docker-cheat-sheet">Docker Cheatsheet</a></li>
+<li>
+<p><code>--keep-index</code>: Stashes only the changes in the working directory, preserving the staged changes.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--keep-index
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--include-untracked</code>: Includes untracked files in the stash.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--include-untracked
+</code></pre></div></p>
+</li>
+<li>
+<p><code>--all</code>: Includes all files (tracked, untracked, and ignored) in the stash.
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--all
+</code></pre></div></p>
+</li>
+<li>
+<p><code>list</code>: Displays all stashed changes.</p>
+</li>
+<li>
+<p><code>pop</code>: Applies the stash and removes it from the stash list.</p>
+</li>
+<li>
+<p><code>apply</code>: Reapplies the stash without removing it from the stash list.</p>
+</li>
+<li>
+<p><code>drop</code>: Deletes a specific stash by its index.</p>
+</li>
 </ul>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Save changes and include untracked files:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--include-untracked
+</code></pre></div></p>
+</li>
+<li>
+<p>Reapply the most recent stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>apply
+</code></pre></div></p>
+</li>
+<li>
+<p>Remove all stashes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>clear
+</code></pre></div></p>
+</li>
+<li>
+<p>View all stashed changes:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>list
+</code></pre></div></p>
+</li>
+<li>
+<p>Apply and remove the most recent stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>pop
+</code></pre></div></p>
+</li>
+<li>
+<p>Drop a specific stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w"> </span>stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Stashing is useful when you want to switch branches without committing your changes.</li>
+<li>You can stash specific files using:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>push<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;message&quot;</span><span class="w"> </span>&lt;file&gt;
+</code></pre></div></li>
+<li>Use <code>git stash show</code> to view the changes in a stash:
+  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>show<span class="w"> </span>-p<span class="w"> </span>stash@<span class="o">{</span><span class="m">0</span><span class="o">}</span>
+</code></pre></div></li>
+</ul>
+<hr />
 
               
             </article>
@@ -1048,7 +1141,7 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../Repository-Setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Repository Setup" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1057,20 +1150,20 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Repository Setup
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Git%20%26%20Github/git_concepts/" class="md-footer__link md-footer__link--next" aria-label="Next: Git Concepts" rel="next">
+        <a href="../Working-With-Branches/" class="md-footer__link md-footer__link--next" aria-label="Next: Working with Branches" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Git Concepts
+              Working with Branches
             </div>
           </div>
           <div class="md-footer__button md-icon">

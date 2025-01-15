@@ -2,78 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ITleans/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Docker/Docker-file/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ITleans/Git%20%26%20Github/git-commands/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <loc>https://ITleans/Git%20%26%20Github/GitIgnore/</loc>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ITleans/Git%20%26%20Github/Manage-Local-Changes/</loc>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ITleans/Git%20%26%20Github/Repository-Setup/</loc>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ITleans/Git%20%26%20Github/Undo-Git-Changes/</loc>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ITleans/Git%20%26%20Github/Working-With-Branches/</loc>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ITleans/Git%20%26%20Github/Working-With-Remote-Repo/</loc>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Git%20%26%20Github/git_concepts/</loc>
-         <lastmod>2025-01-13</lastmod>
-    </url>
-    <url>
-         <loc>https://ITleans/Git%20%26%20Github/github-repo-commands/</loc>
-         <lastmod>2025-01-13</lastmod>
-    </url>
-    <url>
-         <loc>https://ITleans/Git%20%26%20Github/gitignore/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Git%20%26%20Github/ssh-steps/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Linux%20Commands/File-owner-permission/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Linux%20Commands/basic-commands/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Linux%20Commands/file-redirection-piping/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Linux%20Commands/linux-file_ops/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Linux%20Commands/process-management/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/Linux%20Commands/text-processing/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/NetWorking%20Concepts/dns/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/NetWorking%20Concepts/ftp-smtp-tcp/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/NetWorking%20Concepts/https%26http/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/NetWorking%20Concepts/ip_addressing/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/NetWorking%20Concepts/subnetting/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ITleans/NetWorking%20Concepts/vpn-ssh-firewall-ldap/</loc>
-         <lastmod>2025-01-13</lastmod>
+         <lastmod>2025-01-15</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>
