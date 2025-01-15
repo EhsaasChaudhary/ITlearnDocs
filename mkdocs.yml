@@ -37,11 +37,15 @@ nav:
   - Docker:
       - Docker File: Docker/Docker-file.md
   - Git & GitHub:
-      - Git Commands: Git & Github/git-commands.md
-      - GitHub Repo Commands: Git & Github/github-repo-commands.md
-      - Git Ignore: Git & Github/gitignore.md
       - Git Concepts: Git & Github/git_concepts.md
+      - Manage Local Changes: Git & Github/Manage-Local-Changes.md
+      - Repository Setup: Git & Github/Repository-Setup.md
+      - Undo Git Changes: Git & Github/Undo-Git-Changes.md
+      - Working with Branches: Git & Github/Working-With-Branches.md
+      - Working with Remote Repos: Git & Github/Working-With-Remote-Repo.md
+      - Git Ignore: Git & Github/GitIgnore.md
       - SSH Steps: Git & Github/ssh-steps.md
+
   - Linux Commands:
       - Basic Commands: Linux Commands/basic-commands.md
       - File Owner Permission: Linux Commands/File-owner-permission.md
@@ -51,23 +55,14 @@ nav:
       - Text Processing: Linux Commands/text-processing.md
   - Networking Concepts:
       - DNS: NetWorking Concepts/dns.md
-      - FTP, SMTP, TCP: NetWorking Concepts/ftp-smtp-tcp.md
+      - FTP, SMTP & TCP: NetWorking Concepts/ftp-smtp-tcp.md
       - HTTPS & HTTP: NetWorking Concepts/https&http.md
       - IP Addressing: NetWorking Concepts/ip_addressing.md
       - Subnetting: NetWorking Concepts/subnetting.md
-      - VPN, SSH, Firewall, LDAP: NetWorking Concepts/vpn-ssh-firewall-ldap.md
-
+      - VPN, SSH, Firewall & LDAP: NetWorking Concepts/vpn-ssh-firewall-ldap.md
 # Plugins
 plugins:
   - search  # Built-in search functionality
-  - mkdocs-awesome-pages-plugin:  # Automate navigation structure
-      collapse_single_pages: true
-  - mkdocs-static-i18n:  # Multi-language support
-      default_language: en
-  - mkdocs-minify-plugin:  # Minifies HTML, CSS, and JS for faster load times
-  - mkdocs-redirects:  # Allows redirects for moved pages
-  - mkdocs-git-revision-date-localized-plugin:  # Adds "last updated" timestamps
-      enabled: true
 
 # Markdown Extensions
 markdown_extensions:
@@ -94,7 +89,7 @@ extra:
       link: https://github.com/EhsaasChaudhary/ITLearnings
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/Ehsaas-Chaudhary
-  copyright: "© 2025 ITLearn"  # Copyright notice
+  copyright: "© 2025 ITLearn by Ehsaas Chaudhary"  # Copyright notice
 
 # Custom CSS and JS
 # extra_css:
