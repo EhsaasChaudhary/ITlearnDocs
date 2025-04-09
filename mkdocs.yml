@@ -38,6 +38,7 @@ nav:
           - Docker File: Docker/Docker-file.md
           - Docker Guide: Docker/dockerguide.md
           - Docker inspcmd: Docker/dockerinsp.md
+          - Docker Compose Guide: Docker/composeguide.md
     - Git & GitHub:
           - Git Concepts: Git & Github/git_concepts.md
           - Manage Local Changes: Git & Github/Manage-Local-Changes.md
