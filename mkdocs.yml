@@ -36,6 +36,7 @@ nav:
   - Home: index.md
   - Docker:
       - Docker File: Docker/Docker-file.md
+      - Docker Guide: Docker/dockerguide.md
   - Git & GitHub:
       - Git Concepts: Git & Github/git_concepts.md
       - Manage Local Changes: Git & Github/Manage-Local-Changes.md
