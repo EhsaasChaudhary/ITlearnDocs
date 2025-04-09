@@ -12,13 +12,13 @@
         <meta name="author" content="Ehsass Chaudhary">
       
       
-        <link rel="canonical" href="https://ITleans/NetWorking%20Concepts/https%26http/">
+        <link rel="canonical" href="https://ITleans/Docker/composeguide/">
       
       
-        <link rel="prev" href="../ftp-smtp-tcp/">
+        <link rel="prev" href="../dockerinsp/">
       
       
-        <link rel="next" href="../ip_addressing/">
+        <link rel="next" href="../../Git%20%26%20Github/git_concepts/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>HTTPS & HTTP - ITLearn</title>
+        <title>Docker Compose Guide - ITLearn</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#http-vs-https" class="md-skip">
+        <a href="#quick-docker-compose-deployment-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HTTPS & HTTP
+              Docker Compose Guide
             
           </span>
         </div>
@@ -220,11 +220,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Docker/Docker-file/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Docker-file/" class="md-tabs__link">
           
   
   
@@ -280,13 +282,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../dns/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../NetWorking%20Concepts/dns/" class="md-tabs__link">
           
   
   
@@ -359,26 +359,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -391,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Docker
@@ -405,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Docker/Docker-file/" class="md-nav__link">
+      <a href="../Docker-file/" class="md-nav__link">
         
   
   
@@ -428,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Docker/dockerguide/" class="md-nav__link">
+      <a href="../dockerguide/" class="md-nav__link">
         
   
   
@@ -451,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Docker/dockerinsp/" class="md-nav__link">
+      <a href="../dockerinsp/" class="md-nav__link">
         
   
   
@@ -471,10 +474,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Docker/composeguide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Docker Compose Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -485,6 +510,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-clone-the-project-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Clone the Project Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-verify-the-dockerfile-exists-and-note-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Verify the Dockerfile Exists and Note Port
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-the-docker-composeyml-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Create the docker-compose.yml File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-build-and-run-with-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Build and Run with Docker Compose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify-the-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Verify the Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-stop-and-clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Stop and Clean Up
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -923,29 +1031,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -958,7 +1063,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Networking Concepts
@@ -972,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dns/" class="md-nav__link">
+      <a href="../../NetWorking%20Concepts/dns/" class="md-nav__link">
         
   
   
@@ -995,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ftp-smtp-tcp/" class="md-nav__link">
+      <a href="../../NetWorking%20Concepts/ftp-smtp-tcp/" class="md-nav__link">
         
   
   
@@ -1015,32 +1120,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    HTTPS & HTTP
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../NetWorking%20Concepts/https%26http/" class="md-nav__link">
         
   
   
@@ -1051,143 +1134,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-http" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is HTTP?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What is HTTP?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-http-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How HTTP works:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use Case:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-https" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is HTTPS?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What is HTTPS?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-https-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How HTTPS works:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-case_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use Case:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-differences-between-http-and-https" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Differences Between HTTP and HTTPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-commands-and-outputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Commands and Outputs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example Commands and Outputs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-fetching-a-webpage-http-vs-https" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Fetching a Webpage (HTTP vs HTTPS)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-check-ssl-certificate-for-https-website" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Check SSL Certificate ( for HTTPS website)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-analyze-https-header-http-vs-https" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Analyze HTTPS header (HTTP vs HTTPS)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1200,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ip_addressing/" class="md-nav__link">
+      <a href="../../NetWorking%20Concepts/ip_addressing/" class="md-nav__link">
         
   
   
@@ -1223,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../subnetting/" class="md-nav__link">
+      <a href="../../NetWorking%20Concepts/subnetting/" class="md-nav__link">
         
   
   
@@ -1246,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vpn-ssh-firewall-ldap/" class="md-nav__link">
+      <a href="../../NetWorking%20Concepts/vpn-ssh-firewall-ldap/" class="md-nav__link">
         
   
   
@@ -1285,112 +1231,211 @@
 
 
 
-<h1 id="http-vs-https">HTTP vs HTTPS<a class="headerlink" href="#http-vs-https" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-http">What is HTTP?<a class="headerlink" href="#what-is-http" title="Permanent link">&para;</a></h2>
-<p><strong>HTTP (Hypertext Transfer Protocol)</strong> is the foundation of data communication on the web. It is used to transfer data like HTML pages, images, videos, and more between a web client (browser) and a server.</p>
-<h3 id="how-http-works">How HTTP works:<a class="headerlink" href="#how-http-works" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A client sends an HTTP request to a server.</li>
-<li>The server processes the request and sends back an HTTP response, usually containing the requested resource.</li>
-<li>HTTP is <strong>stateless</strong>, meaning each request-response pair is independent.</li>
+<h1 id="quick-docker-compose-deployment-guide">Quick Docker Compose Deployment Guide<a class="headerlink" href="#quick-docker-compose-deployment-guide" title="Permanent link">&para;</a></h1>
+<p>This guide shows how to use a basic <code>docker-compose.yml</code> file to build and run your cloned Git project as a Docker container. This often simplifies the build and run steps, especially for single-service applications common in competitions.</p>
+<p><strong>Estimated Time:</strong> 10-20 minutes (assuming <code>Dockerfile</code> exists and is correct)</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Git:</strong> Installed.</li>
+<li><strong>Docker:</strong> Installed and running.</li>
+<li><strong>Docker Compose:</strong> Installed.<ul>
+<li><em>Note:</em> Docker Compose V2 (<code>docker compose</code>) is standard with Docker Desktop. Older versions use <code>docker-compose</code>. Use <code>docker compose</code> first; if it fails, try <code>docker-compose</code>.</li>
 </ul>
-<h3 id="use-case">Use Case:<a class="headerlink" href="#use-case" title="Permanent link">&para;</a></h3>
-<p>HTTP is typically used for accessing web pages or APIs where encryption is not required.</p>
-<hr />
-<h2 id="what-is-https">What is HTTPS?<a class="headerlink" href="#what-is-https" title="Permanent link">&para;</a></h2>
-<p><strong>HTTPS (Hypertext Transfer Protocol Secure)</strong> is an extension of HTTP with added security features. It encrypts the communication between the client and server using <strong>SSL/TLS</strong>.</p>
-<h3 id="how-https-works">How HTTPS works:<a class="headerlink" href="#how-https-works" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Adds a layer of encryption via SSL/TLS, ensuring that data exchanged is secure from eavesdropping or tampering.</li>
-<li>Verifies the authenticity of the server through an SSL certificate.</li>
+</li>
+<li><strong>GitHub Repository URL:</strong> The URL of the project.</li>
+<li><strong>Project with a Dockerfile:</strong> The target repository <em>must</em> contain a correctly configured <code>Dockerfile</code> for the application's technology (Node.js, Python, Go, etc.). If not, you'll need to create one first.</li>
+</ol>
+<h2 id="step-1-clone-the-project-repository">Step 1: Clone the Project Repository<a class="headerlink" href="#step-1-clone-the-project-repository" title="Permanent link">&para;</a></h2>
+<p>(Same as before)</p>
+<ol>
+<li><strong>Navigate</strong> to your workspace:
+    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/path/to/your/workspace
+</code></pre></div></li>
+<li><strong>Clone</strong> the repository:
+    <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;repository_url&gt;
+<span class="c1"># Example: git clone https://github.com/username/project-name.git</span>
+</code></pre></div></li>
+<li><strong>Change Directory</strong> into the cloned project folder:
+    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>project-name
+<span class="c1"># (Replace &#39;project-name&#39; with the actual folder name)</span>
+</code></pre></div></li>
+</ol>
+<h2 id="step-2-verify-the-dockerfile-exists-and-note-port">Step 2: Verify the Dockerfile Exists and Note Port<a class="headerlink" href="#step-2-verify-the-dockerfile-exists-and-note-port" title="Permanent link">&para;</a></h2>
+<p>(Crucial for the <code>build</code> step and port mapping)</p>
+<ol>
+<li><strong>Check</strong> for the <code>Dockerfile</code> in the project root:
+    <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-a
+</code></pre></div><ul>
+<li><strong>If it doesn't exist, STOP.</strong> Docker Compose needs it to build the image. You must create a suitable <code>Dockerfile</code> first (refer to previous examples if needed).</li>
 </ul>
-<h3 id="use-case_1">Use Case:<a class="headerlink" href="#use-case_1" title="Permanent link">&para;</a></h3>
-<p>HTTPS is essential for secure communication, such as online banking, e-commerce, and protecting sensitive user data.</p>
-<hr />
-<h2 id="key-differences-between-http-and-https">Key Differences Between HTTP and HTTPS<a class="headerlink" href="#key-differences-between-http-and-https" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>HTTP</th>
-<th>HTTPS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Security</strong></td>
-<td>Unencrypted, prone to attacks</td>
-<td>Encrypted, secure communication</td>
-</tr>
-<tr>
-<td><strong>Port</strong></td>
-<td>80</td>
-<td>443</td>
-</tr>
-<tr>
-<td><strong>Certificate</strong></td>
-<td>No SSL/TLS certificate needed</td>
-<td>Requires SSL/TLS certificate</td>
-</tr>
-<tr>
-<td><strong>Performance</strong></td>
-<td>Slightly faster</td>
-<td>Slightly slower due to encryption</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="example-commands-and-outputs">Example Commands and Outputs<a class="headerlink" href="#example-commands-and-outputs" title="Permanent link">&para;</a></h2>
-<h3 id="1-fetching-a-webpage-http-vs-https">1. Fetching a Webpage (HTTP vs HTTPS)<a class="headerlink" href="#1-fetching-a-webpage-http-vs-https" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Command:
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://example.com
-curl<span class="w"> </span>https://example.com
-</code></pre></div></li>
-<li>Command Output:
-<div class="highlight"><pre><span></span><code>&lt;html&gt;
-&lt;head&gt;&lt;title&gt;Example<span class="w"> </span>Domain&lt;/title&gt;&lt;/head&gt;
-&lt;body&gt;...&lt;/body&gt;
-&lt;/html&gt;
-</code></pre></div></li>
-<li>Output for both is same, in https what data is encrypted</li>
-</ul>
-<h3 id="2-check-ssl-certificate-for-https-website">2. Check SSL Certificate ( for HTTPS website)<a class="headerlink" href="#2-check-ssl-certificate-for-https-website" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Command:
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>s_client<span class="w"> </span>-connect<span class="w"> </span>tablesmate.vercel.app:443
-</code></pre></div></li>
-<li>Output for above command contains certificate key, session id and various info for SSL Identification.</li>
-</ul>
-<h3 id="3-analyze-https-header-http-vs-https">3. Analyze HTTPS header (HTTP vs HTTPS)<a class="headerlink" href="#3-analyze-https-header-http-vs-https" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Command:
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-I<span class="w"> </span>https://tablesmate.vercel.app
-</code></pre></div></li>
+</li>
+<li><strong>If it exists, view its contents</strong> (e.g., <code>cat Dockerfile</code>) and <strong>find the <code>EXPOSE</code> instruction</strong>. Note the <code>&lt;container_port&gt;</code> number (e.g., <code>3000</code>, <code>5000</code>, <code>8080</code>). You <em>need</em> this for the <code>docker-compose.yml</code>.</li>
+<li>Also, quickly check the <code>CMD</code> or <code>ENTRYPOINT</code> in the <code>Dockerfile</code> to ensure it looks correct for starting the application.</li>
+</ol>
+<h2 id="step-3-create-the-docker-composeyml-file">Step 3: Create the <code>docker-compose.yml</code> File<a class="headerlink" href="#step-3-create-the-docker-composeyml-file" title="Permanent link">&para;</a></h2>
+<p>This file tells Docker Compose how to build and run your application container.</p>
+<ol>
 <li>
-<p>Command Output:
-<div class="highlight"><pre><span></span><code>HTTP/2<span class="w"> </span><span class="m">200</span>
-accept-ranges:<span class="w"> </span>bytes
-access-control-allow-origin:<span class="w"> </span>*
-age:<span class="w"> </span><span class="m">435825</span>
-cache-control:<span class="w"> </span>public,<span class="w"> </span>max-age<span class="o">=</span><span class="m">0</span>,<span class="w"> </span>must-revalidate
-content-disposition:<span class="w"> </span>inline
-content-type:<span class="w"> </span>text/html<span class="p">;</span><span class="w"> </span><span class="nv">charset</span><span class="o">=</span>utf-8
-date:<span class="w"> </span>Thu,<span class="w"> </span><span class="m">26</span><span class="w"> </span>Dec<span class="w"> </span><span class="m">2024</span><span class="w"> </span><span class="m">17</span>:18:24<span class="w"> </span>GMT
-etag:<span class="w"> </span><span class="s2">&quot;51a5a44d4b8759e7ec7ba4b1f83addcc&quot;</span>
-server:<span class="w"> </span>Vercel
-strict-transport-security:<span class="w"> </span>max-age<span class="o">=</span><span class="m">63072000</span><span class="p">;</span><span class="w"> </span>includeSubDomains<span class="p">;</span><span class="w"> </span>preload
-vary:<span class="w"> </span>RSC,<span class="w"> </span>Next-Router-State-Tree,<span class="w"> </span>Next-Router-Prefetch
-x-matched-path:<span class="w"> </span>/
-x-vercel-cache:<span class="w"> </span>HIT
-x-vercel-id:<span class="w"> </span>bom1::pnqb8-1735233504785-0cf1f8236a74
-content-length:<span class="w"> </span><span class="m">20363</span>
+<p><strong>Create</strong> a new file named exactly <code>docker-compose.yml</code> in the <strong>root directory</strong> of your project (the same directory where the <code>Dockerfile</code> is).</p>
+</li>
+<li>
+<p><strong>Choose ONE</strong> of the following examples based on the project's technology (Node.js, Python, or Go) and <strong>copy its content</strong> into your <code>docker-compose.yml</code> file.</p>
+</li>
+<li>
+<p><strong>Customize</strong> the chosen example, especially the <code>ports</code> section.</p>
+<hr />
+<p><strong>Example 1: Node.js Application (<code>Dockerfile</code> EXPOSEs 3000)</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># File: docker-compose.yml (for Node.js project)</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Service name (can be anything, e.g., &#39;app&#39;, &#39;web&#39;)</span>
+<span class="w">  </span><span class="nt">node-app</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># Build the image using the Dockerfile in the current directory (.)</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="w">    </span><span class="c1"># Name the resulting container (optional, but helpful)</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-node-app-container</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Map port &lt;host_port&gt; on your machine to container port 3000</span>
+<span class="w">      </span><span class="c1"># CHOOSE a free &lt;host_port&gt; (e.g., 8080)</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;&lt;host_port&gt;:3000&quot;</span>
+<span class="w">      </span><span class="c1"># Example: - &quot;8080:3000&quot;</span>
+<span class="w">    </span><span class="c1"># Optional: Define environment variables if needed by the Node app</span>
+<span class="w">    </span><span class="c1"># environment:</span>
+<span class="w">    </span><span class="c1">#   - NODE_ENV=production</span>
+<span class="w">    </span><span class="c1">#   - API_KEY=your_api_key_here</span>
+</code></pre></div>
+<hr />
+<p><strong>Example 2: Python Application (<code>Dockerfile</code> EXPOSEs 5000)</strong></p>
+<p><em>Make sure the <code>CMD</code> in your Python <code>Dockerfile</code> is correct (e.g., using Gunicorn on <code>0.0.0.0:5000</code> or <code>python manage.py runserver 0.0.0.0:8000</code>)</em></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># File: docker-compose.yml (for Python project)</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">python-app</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-python-app-container</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Map port &lt;host_port&gt; on your machine to container port 5000</span>
+<span class="w">      </span><span class="c1"># (Adjust container port if your Dockerfile/CMD uses a different one, e.g., 8000)</span>
+<span class="w">      </span><span class="c1"># CHOOSE a free &lt;host_port&gt; (e.g., 8081)</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;&lt;host_port&gt;:5000&quot;</span>
+<span class="w">      </span><span class="c1"># Example for Flask/Gunicorn on 5000: - &quot;8081:5000&quot;</span>
+<span class="w">      </span><span class="c1"># Example for Django runserver on 8000: - &quot;8081:8000&quot;</span>
+<span class="w">    </span><span class="c1"># Optional: Define environment variables if needed by the Python app</span>
+<span class="w">    </span><span class="c1"># environment:</span>
+<span class="w">    </span><span class="c1">#   - FLASK_ENV=production</span>
+<span class="w">    </span><span class="c1">#   - DATABASE_URL=your_db_connection_string</span>
+</code></pre></div>
+<hr />
+<p><strong>Example 3: Go Application (<code>Dockerfile</code> EXPOSEs 8080)</strong></p>
+<p><em>Make sure your Go <code>Dockerfile</code> is complete (including the final stage) and correctly builds/copies/runs your binary, and that the <code>EXPOSE</code> matches the port your Go app listens on.</em></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># File: docker-compose.yml (for Go project)</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">go-app</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-go-app-container</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Map port &lt;host_port&gt; on your machine to container port 8080</span>
+<span class="w">      </span><span class="c1"># (Adjust container port if your Dockerfile/Go app uses a different one)</span>
+<span class="w">      </span><span class="c1"># CHOOSE a free &lt;host_port&gt; (e.g., 8082)</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;&lt;host_port&gt;:8080&quot;</span>
+<span class="w">      </span><span class="c1"># Example: - &quot;8082:8080&quot;</span>
+<span class="w">    </span><span class="c1"># Optional: Define environment variables if needed by the Go app</span>
+<span class="w">    </span><span class="c1"># environment:</span>
+<span class="w">    </span><span class="c1">#   - GIN_MODE=release</span>
+<span class="w">    </span><span class="c1">#   - LISTEN_PORT=8080</span>
+</code></pre></div>
+<hr />
+</li>
+<li>
+<p><strong>Customize the Ports:</strong></p>
+<ul>
+<li>Replace <code>&lt;host_port&gt;</code> in the chosen example with a port number that is <strong>free</strong> on your local machine (e.g., <code>8080</code>, <code>8081</code>, <code>8082</code>, <code>5000</code>, <code>80</code>). This is the port you will access via <code>localhost:&lt;host_port&gt;</code> in your browser.</li>
+<li>Ensure the <code>&lt;container_port&gt;</code> (the number <em>after</em> the colon, e.g., <code>3000</code>, <code>5000</code>, <code>8080</code>) <strong>exactly matches</strong> the port number specified in the <code>EXPOSE</code> instruction of your project's <code>Dockerfile</code> <em>and</em> the port the application inside the container actually listens on.</li>
+</ul>
+</li>
+<li>
+<p><strong>(Optional) Customize Service/Container Names:</strong> You can change <code>node-app</code>, <code>python-app</code>, <code>go-app</code> or <code>my-node-app-container</code>, etc., if desired, but the defaults are usually fine for a competition.</p>
+</li>
+<li>
+<p><strong>Save</strong> the <code>docker-compose.yml</code> file.</p>
+</li>
+</ol>
+<h2 id="step-4-build-and-run-with-docker-compose">Step 4: Build and Run with Docker Compose<a class="headerlink" href="#step-4-build-and-run-with-docker-compose" title="Permanent link">&para;</a></h2>
+<p>Make sure you are in the project's root directory (where <code>docker-compose.yml</code> and <code>Dockerfile</code> are) in your terminal.</p>
+<ol>
+<li>
+<p><strong>Build and Start:</strong> This command builds the image using the <code>Dockerfile</code> (if needed) and starts the container defined in <code>docker-compose.yml</code>.</p>
+<ul>
+<li><code>--build</code>: Forces Docker Compose to rebuild the image, ensuring your latest <code>Dockerfile</code> changes are used. Recommended for competitions.</li>
+<li><code>-d</code>: Runs the containers in detached mode (in the background).</li>
+</ul>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>--build<span class="w"> </span>-d
+</code></pre></div>
+</li>
+<li>
+<p><strong>Wait</strong> for the command to complete. Building might take some time, especially the first time. Look for output indicating the container(s) were created and started.</p>
+</li>
+</ol>
+<h2 id="step-5-verify-the-deployment">Step 5: Verify the Deployment<a class="headerlink" href="#step-5-verify-the-deployment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Check running Compose services:</strong>
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>ps
+</code></pre></div>
+    You should see your service (e.g., <code>node-app</code>, <code>python-app</code>, <code>go-app</code>) listed with State/Status <code>Up</code> or <code>running</code>.</p>
+</li>
+<li>
+<p><strong>Check container logs:</strong> Essential for debugging if the app doesn't work. Replace <code>&lt;service_name&gt;</code> with the name you used in <code>docker-compose.yml</code> (e.g., <code>node-app</code>, <code>python-app</code>, <code>go-app</code>).
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>&lt;service_name&gt;
+<span class="c1"># Example: docker compose logs node-app</span>
+</code></pre></div></p>
+<ul>
+<li>Use <code>-f</code> to follow the logs in real-time: <code>docker compose logs -f &lt;service_name&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Check all Docker containers (optional standard command):</strong>
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps
+</code></pre></div>
+    You should see your container listed (e.g., <code>my-node-app-container</code> or a generated name like <code>project-name-node-app-1</code>).</p>
+</li>
+<li>
+<p><strong>Access the application:</strong> Open your web browser and go to <code>http://localhost:&lt;host_port&gt;</code> (using the <code>&lt;host_port&gt;</code> you specified in the <code>ports:</code> section of your <code>docker-compose.yml</code>).</p>
+<ul>
+<li>Example if you used <code>"8080:3000"</code>: <code>http://localhost:8080</code></li>
+<li>Example if you used <code>"8081:5000"</code>: <code>http://localhost:8081</code></li>
+<li>Example if you used <code>"8082:8080"</code>: <code>http://localhost:8082</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="step-6-stop-and-clean-up">Step 6: Stop and Clean Up<a class="headerlink" href="#step-6-stop-and-clean-up" title="Permanent link">&para;</a></h2>
+<p>When you're finished with the container:</p>
+<ol>
+<li>
+<p><strong>Stop and remove containers, networks defined by Compose:</strong> Execute this command from the <em>same directory</em> containing the <code>docker-compose.yml</code> file.
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>down
+</code></pre></div></p>
+<ul>
+<li>This stops and removes the containers created by <code>docker compose up</code>.</li>
+<li>To also remove named volumes (if you used any): <code>docker compose down -v</code></li>
+</ul>
+</li>
+<li>
+<p><strong>(Optional) Remove the built image:</strong> <code>docker compose down</code> does <em>not</em> remove the image. Use <code>docker images</code> to find the image name (often tagged like <code>&lt;directory_name&gt;-&lt;service_name&gt;</code>) and then remove it if needed.
+    <div class="highlight"><pre><span></span><code><span class="c1"># 1. Find the image name/tag (e.g., project-name-node-app)</span>
+docker<span class="w"> </span>images
+
+<span class="c1"># 2. Remove the specific image</span>
+docker<span class="w"> </span>rmi<span class="w"> </span>&lt;image_name_tag&gt;
+<span class="c1"># Example: docker rmi project-name-node-app</span>
 </code></pre></div></p>
 </li>
-<li>
-<p>output for the above command is header for the website such as status code, server, cache-control etc.</p>
-</li>
-</ul>
+</ol>
+<p>This Docker Compose approach streamlines the build and run process into fewer commands, making it efficient for competitions. Good luck!</p>
 
 
 
