@@ -12,13 +12,13 @@
         <meta name="author" content="Ehsass Chaudhary">
       
       
-        <link rel="canonical" href="https://ITleans/Linux%20Commands/File-owner-permission/">
+        <link rel="canonical" href="https://ITleans/Docker/dockerguide/">
       
       
-        <link rel="prev" href="../basic-commands/">
+        <link rel="prev" href="../Docker-file/">
       
       
-        <link rel="next" href="../file-redirection-piping/">
+        <link rel="next" href="../../Git%20%26%20Github/git_concepts/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>File Owner Permission - ITLearn</title>
+        <title>Docker Guide - ITLearn</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#file-permissions-and-ownership-in-linux" class="md-skip">
+        <a href="#quick-git-docker-deployment-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              File Owner Permission
+              Docker Guide
             
           </span>
         </div>
@@ -220,11 +220,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Docker/Docker-file/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Docker-file/" class="md-tabs__link">
           
   
   
@@ -260,13 +262,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../basic-commands/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Linux%20Commands/basic-commands/" class="md-tabs__link">
           
   
   
@@ -359,26 +359,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -391,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Docker
@@ -405,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Docker/Docker-file/" class="md-nav__link">
+      <a href="../Docker-file/" class="md-nav__link">
         
   
   
@@ -425,10 +428,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Docker/dockerguide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Docker Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -439,6 +464,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-clone-the-project-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Clone the Project Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-locate-or-create-the-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Locate or Create the Dockerfile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-build-the-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Build the Docker Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-run-the-docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Run the Docker Container
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify-the-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Verify the Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-cleanup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Cleanup (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -689,29 +797,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -724,7 +829,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Linux Commands
@@ -738,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic-commands/" class="md-nav__link">
+      <a href="../../Linux%20Commands/basic-commands/" class="md-nav__link">
         
   
   
@@ -758,32 +863,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    File Owner Permission
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Linux%20Commands/File-owner-permission/" class="md-nav__link">
         
   
   
@@ -794,155 +877,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands-for-managing-file-permissions-and-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands for Managing File Permissions and Ownership
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Commands for Managing File Permissions and Ownership">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-chmod-change-file-permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. chmod - Change File Permissions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-chown-change-file-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. chown - Change File Ownership
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-chgrp-change-group-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. chgrp - Change Group Ownership
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ls-l-list-file-permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. ls -l - List File Permissions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-umask-default-permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. umask - Default Permissions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-stat-detailed-file-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. stat - Detailed File Information
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-getfacl-and-setfacl-access-control-lists-acls" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. getfacl and setfacl - Access Control Lists (ACLs)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="7. getfacl and setfacl - Access Control Lists (ACLs)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getfacl-view-acls" class="md-nav__link">
-    <span class="md-ellipsis">
-      getfacl - View ACLs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setfacl-modify-acls" class="md-nav__link">
-    <span class="md-ellipsis">
-      setfacl - Modify ACLs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acronyms-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acronyms Used
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -955,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../file-redirection-piping/" class="md-nav__link">
+      <a href="../../Linux%20Commands/file-redirection-piping/" class="md-nav__link">
         
   
   
@@ -978,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux-file_ops/" class="md-nav__link">
+      <a href="../../Linux%20Commands/linux-file_ops/" class="md-nav__link">
         
   
   
@@ -1001,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../process-management/" class="md-nav__link">
+      <a href="../../Linux%20Commands/process-management/" class="md-nav__link">
         
   
   
@@ -1024,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../text-processing/" class="md-nav__link">
+      <a href="../../Linux%20Commands/text-processing/" class="md-nav__link">
         
   
   
@@ -1251,154 +1185,233 @@
 
 
 
-<h1 id="file-permissions-and-ownership-in-linux">File Permissions and Ownership in Linux<a class="headerlink" href="#file-permissions-and-ownership-in-linux" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>File permissions and ownership in Linux determine who can read, write, or execute a file or directory. These settings ensure system security and controlled access.</p>
-<h2 id="commands-for-managing-file-permissions-and-ownership">Commands for Managing File Permissions and Ownership<a class="headerlink" href="#commands-for-managing-file-permissions-and-ownership" title="Permanent link">&para;</a></h2>
-<h3 id="1-chmod-change-file-permissions">1. <code>chmod</code> - Change File Permissions<a class="headerlink" href="#1-chmod-change-file-permissions" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Modifies the read, write, and execute permissions for files and directories.</li>
-<li><strong>Examples</strong>:
-  <div class="highlight"><pre><span></span><code><span class="c1"># Give read, write, and execute permissions to the owner</span>
-$<span class="w"> </span>chmod<span class="w"> </span>u+rwx<span class="w"> </span>file.txt
-
-<span class="c1"># Remove write permissions for the group</span>
-$<span class="w"> </span>chmod<span class="w"> </span>g-w<span class="w"> </span>file.txt
-
-<span class="c1"># Set permissions using numeric notation</span>
-$<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>file.txt
-</code></pre></div></li>
-<li><strong>Options</strong>:</li>
-<li><code>-R</code>: Apply changes recursively to directories.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>folder
-</code></pre></div></li>
-<li><code>--reference</code>: Apply permissions from a reference file.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>chmod<span class="w"> </span>--reference<span class="o">=</span>reference.txt<span class="w"> </span>target.txt
-</code></pre></div></li>
-</ul>
-<hr />
-<h3 id="2-chown-change-file-ownership">2. <code>chown</code> - Change File Ownership<a class="headerlink" href="#2-chown-change-file-ownership" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Alters the ownership of a file or directory.</li>
-<li><strong>Examples</strong>:
-  <div class="highlight"><pre><span></span><code><span class="c1"># Change owner to &#39;user&#39;</span>
-$<span class="w"> </span>chown<span class="w"> </span>user<span class="w"> </span>file.txt
-
-<span class="c1"># Change owner and group</span>
-$<span class="w"> </span>chown<span class="w"> </span>user:group<span class="w"> </span>file.txt
-</code></pre></div></li>
-<li><strong>Options</strong>:</li>
-<li><code>-R</code>: Apply changes recursively.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>user:group<span class="w"> </span>folder
-</code></pre></div></li>
-<li><code>--from</code>: Change ownership only if the current owner matches.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>chown<span class="w"> </span>--from<span class="o">=</span>current_user<span class="w"> </span>new_user<span class="w"> </span>file.txt
-</code></pre></div></li>
-</ul>
-<hr />
-<h3 id="3-chgrp-change-group-ownership">3. <code>chgrp</code> - Change Group Ownership<a class="headerlink" href="#3-chgrp-change-group-ownership" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Modifies the group associated with a file or directory.</li>
-<li><strong>Examples</strong>:
-  <div class="highlight"><pre><span></span><code><span class="c1"># Change group to &#39;developers&#39;</span>
-$<span class="w"> </span>chgrp<span class="w"> </span>developers<span class="w"> </span>file.txt
-</code></pre></div></li>
-<li><strong>Options</strong>:</li>
-<li><code>-R</code>: Apply changes recursively.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>developers<span class="w"> </span>folder
-</code></pre></div></li>
-<li><code>--reference</code>: Apply group ownership from a reference file.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>chgrp<span class="w"> </span>--reference<span class="o">=</span>reference.txt<span class="w"> </span>target.txt
-</code></pre></div></li>
-</ul>
-<hr />
-<h3 id="4-ls-l-list-file-permissions">4. <code>ls -l</code> - List File Permissions<a class="headerlink" href="#4-ls-l-list-file-permissions" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Displays the permissions of files and directories in a detailed format.</li>
-<li><strong>Example</strong>:
-  <div class="highlight"><pre><span></span><code>$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>file.txt
--rw-r--r--<span class="w"> </span><span class="m">1</span><span class="w"> </span>user<span class="w"> </span>group<span class="w"> </span><span class="m">1234</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">10</span>:00<span class="w"> </span>file.txt
-</code></pre></div></li>
-<li>The first column (<code>-rw-r--r--</code>) shows permissions for owner, group, and others.</li>
-</ul>
-<hr />
-<h3 id="5-umask-default-permissions">5. <code>umask</code> - Default Permissions<a class="headerlink" href="#5-umask-default-permissions" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Sets the default permissions for new files and directories.</li>
-<li><strong>Examples</strong>:
-  <div class="highlight"><pre><span></span><code><span class="c1"># View current umask value</span>
-$<span class="w"> </span><span class="nb">umask</span>
-<span class="m">0022</span>
-
-<span class="c1"># Set a new umask value</span>
-$<span class="w"> </span><span class="nb">umask</span><span class="w"> </span><span class="m">0027</span>
-</code></pre></div></li>
-<li><strong>Explanation</strong>: A <code>umask</code> value of <code>0022</code> means:</li>
-<li>Owner: Read, write</li>
-<li>Group: Read-only</li>
-<li>Others: Read-only</li>
-</ul>
-<hr />
-<h3 id="6-stat-detailed-file-information">6. <code>stat</code> - Detailed File Information<a class="headerlink" href="#6-stat-detailed-file-information" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Provides detailed information about a file, including permissions and ownership.</li>
-<li><strong>Example</strong>:
-  <div class="highlight"><pre><span></span><code>$<span class="w"> </span>stat<span class="w"> </span>file.txt
-File:<span class="w"> </span>file.txt
-Size:<span class="w"> </span><span class="m">1234</span><span class="w">       </span>Blocks:<span class="w"> </span><span class="m">8</span><span class="w">          </span>IO<span class="w"> </span>Block:<span class="w"> </span><span class="m">4096</span><span class="w">   </span>regular<span class="w"> </span>file
-Device:<span class="w"> </span>802h/2050d<span class="w">   </span>Inode:<span class="w"> </span><span class="m">123456</span><span class="w">    </span>Links:<span class="w"> </span><span class="m">1</span>
-Access:<span class="w"> </span><span class="m">2025</span>-01-05<span class="w"> </span><span class="m">10</span>:00:00.000000000<span class="w"> </span>+0000
-Modify:<span class="w"> </span><span class="m">2025</span>-01-05<span class="w"> </span><span class="m">10</span>:00:00.000000000<span class="w"> </span>+0000
-Change:<span class="w"> </span><span class="m">2025</span>-01-05<span class="w"> </span><span class="m">10</span>:00:00.000000000<span class="w"> </span>+0000
-Birth:<span class="w"> </span>-
-</code></pre></div></li>
-</ul>
-<hr />
-<h3 id="7-getfacl-and-setfacl-access-control-lists-acls">7. <code>getfacl</code> and <code>setfacl</code> - Access Control Lists (ACLs)<a class="headerlink" href="#7-getfacl-and-setfacl-access-control-lists-acls" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Description</strong>: Manages fine-grained file permissions using ACLs.</li>
-</ul>
-<h4 id="getfacl-view-acls"><code>getfacl</code> - View ACLs<a class="headerlink" href="#getfacl-view-acls" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>Example</strong>:
-  <div class="highlight"><pre><span></span><code>$<span class="w"> </span>getfacl<span class="w"> </span>file.txt
-<span class="c1"># file: file.txt</span>
-<span class="c1"># owner: user</span>
-<span class="c1"># group: group</span>
-user::rw-
-group::r--
-other::r--
-</code></pre></div></li>
-</ul>
-<h4 id="setfacl-modify-acls"><code>setfacl</code> - Modify ACLs<a class="headerlink" href="#setfacl-modify-acls" title="Permanent link">&para;</a></h4>
-<ul>
+<h1 id="quick-git-docker-deployment-guide">Quick Git &amp; Docker Deployment Guide<a class="headerlink" href="#quick-git-docker-deployment-guide" title="Permanent link">&para;</a></h1>
+<p>This guide provides the basic steps to clone a Git repository and run it as a Docker container. Aimed for speed and simplicity during a competition.</p>
+<p><strong>Estimated Time:</strong> 10-30 minutes (depending on project complexity and download speeds)</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Git:</strong> Installed on your machine. (<a href="https://git-scm.com/">https://git-scm.com/</a>)</li>
+<li><strong>Docker:</strong> Installed and <em>running</em> on your machine (Docker Desktop or Docker Engine). (<a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a>)</li>
+<li><strong>GitHub Repository URL:</strong> You need the HTTPS or SSH URL of the project repository you need to deploy. Example: <code>https://github.com/username/project-name.git</code></li>
+</ol>
+<h2 id="step-1-clone-the-project-repository">Step 1: Clone the Project Repository<a class="headerlink" href="#step-1-clone-the-project-repository" title="Permanent link">&para;</a></h2>
+<p>Open your terminal or command prompt.</p>
+<ol>
 <li>
-<p><strong>Examples</strong>:
-  <div class="highlight"><pre><span></span><code><span class="c1"># Grant user &#39;john&#39; read permission</span>
-$<span class="w"> </span>setfacl<span class="w"> </span>-m<span class="w"> </span>u:john:r<span class="w"> </span>file.txt
-
-<span class="c1"># Remove all ACL entries</span>
-$<span class="w"> </span>setfacl<span class="w"> </span>-b<span class="w"> </span>file.txt
+<p><strong>Navigate</strong> to the directory where you want to store the project locally:
+    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/path/to/your/workspace
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>Options</strong>:</p>
+<p><strong>Clone</strong> the repository using its URL:
+    <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;repository_url&gt;
+<span class="c1"># Example: git clone https://github.com/username/project-name.git</span>
+</code></pre></div></p>
 </li>
-<li><code>-m</code>: Modify ACL entries.</li>
-<li><code>-x</code>: Remove specific ACL entries.</li>
-<li><code>-b</code>: Remove all ACL entries.</li>
-<li><code>-R</code>: Apply changes recursively.</li>
-</ul>
-<hr />
-<h2 id="acronyms-used">Acronyms Used<a class="headerlink" href="#acronyms-used" title="Permanent link">&para;</a></h2>
+<li>
+<p><strong>Change Directory</strong> into the cloned project folder:
+    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>project-name
+<span class="c1"># (Replace &#39;project-name&#39; with the actual folder name created by git clone)</span>
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="step-2-locate-or-create-the-dockerfile">Step 2: Locate or Create the Dockerfile<a class="headerlink" href="#step-2-locate-or-create-the-dockerfile" title="Permanent link">&para;</a></h2>
+<p>A <code>Dockerfile</code> is a text file containing instructions to build a Docker image.</p>
+<ol>
+<li>
+<p><strong>Check for an existing Dockerfile:</strong> Look for a file named exactly <code>Dockerfile</code> (no extension) in the root directory of the project you just cloned.
+    <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-a
+<span class="c1"># Look for &#39;Dockerfile&#39; in the output</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>If a <code>Dockerfile</code> exists:</strong> Great! Proceed to review its contents quickly if you have time, especially the <code>EXPOSE</code> command (which tells you the port the application runs on inside the container) and the <code>CMD</code> or <code>ENTRYPOINT</code> (which tells you how the application starts).</p>
+</li>
+<li>
+<p><strong>If NO <code>Dockerfile</code> exists (CRITICAL):</strong> You <em>might</em> need to create a basic one. This depends heavily on the project's technology. <strong>If the competition rules imply the project <em>should</em> have one, double-check the repo or ask an organizer.</strong> If you <em>must</em> create one, here are very basic <em>templates</em> you'd adapt:</p>
 <ul>
-<li><strong>ACL</strong>: Access Control List</li>
-<li><strong>IO Block</strong>: Input/Output Block</li>
-<li><strong>umask</strong>: User file creation mode mask</li>
+<li><strong>Remember to replace placeholders</strong> like <code>your-app-entrypoint.js</code>, <code>requirements.txt</code>, <code>your_main_module:app</code>, <code>main.go</code>, <code>your-app-binary</code>, and port numbers (<code>3000</code>, <code>5000</code>, <code>8080</code>) with the actual values for the project.</li>
 </ul>
 <hr />
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>These commands provide robust control over file permissions and ownership, allowing administrators and users to manage access securely and efficiently. By mastering these tools, you can ensure the integrity and confidentiality of your files and directories.</p>
+<p><strong>Example 1: Node.js Application</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c"># Use an official Node.js runtime as a parent image (Alpine versions are smaller)</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span>
+
+<span class="c"># Set the working directory in the container</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/usr/src/app</span>
+
+<span class="c"># Copy package.json and package-lock.json (or yarn.lock) first</span>
+<span class="c"># This leverages Docker&#39;s build cache</span>
+<span class="k">COPY</span><span class="w"> </span>package*.json<span class="w"> </span>./
+
+<span class="c"># Install app dependencies</span>
+<span class="k">RUN</span><span class="w"> </span>npm<span class="w"> </span>install
+<span class="c"># Or: RUN yarn install</span>
+
+<span class="c"># Bundle app source inside the Docker image</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+
+<span class="c"># What port the app runs on *inside* the container (check project docs/code)</span>
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
+
+<span class="c"># Define the command to run your app</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;index.js&quot;</span><span class="w"> </span><span class="p">]</span>
+</code></pre></div>
+<hr />
+<p><strong>Example 2: Python Application (Flask/Django style)</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c"># Use an official Python runtime as a parent image (slim versions are good)</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9-slim</span>
+
+<span class="c"># Set the working directory in the container</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+
+<span class="c"># Copy the requirements file first for caching</span>
+<span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>./
+
+<span class="c"># Install any needed packages specified in requirements.txt</span>
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+
+<span class="c"># Copy the rest of the application code</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+
+<span class="c"># Make port 5000 available to the world outside this container (adjust if needed)</span>
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">5000 # Common for Flask, Django might use 8000</span>
+
+<span class="c"># Define the command to run your app (using gunicorn is common for production)</span>
+<span class="c"># Replace &#39;your_main_module:app&#39; with the actual module and Flask app variable</span>
+<span class="c"># Or for Django: CMD [&quot;python&quot;, &quot;manage.py&quot;, &quot;runserver&quot;, &quot;0.0.0.0:8000&quot;]</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;gunicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--bind&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0:5000&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your_main_module:app&quot;</span><span class="p">]</span>
+<span class="c"># Or a simpler version for development/basic apps:</span>
+<span class="c"># CMD [&quot;python&quot;, &quot;./index.py&quot;]</span>
+</code></pre></div>
+<hr />
+<p><strong>Example 3: Go Application (Multi-stage build)</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c"># --- Build Stage ---</span>
+<span class="c"># Use an official Go image for building the binary</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.19</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">builder</span>
+
+<span class="c"># Set the working directory inside the build stage</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+
+<span class="c"># Copy Go modules manifests</span>
+<span class="k">COPY</span><span class="w"> </span>go.mod<span class="w"> </span>go.sum<span class="w"> </span>./
+
+<span class="c"># Download dependencies</span>
+<span class="k">RUN</span><span class="w"> </span>go<span class="w"> </span>mod<span class="w"> </span>init
+<span class="c"># RUN go mod download</span>
+
+<span class="c"># Copy the source code</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+
+<span class="c"># Build the Go app - creates a static binary</span>
+<span class="c"># CGO_ENABLED=0 makes it fully static (no C dependencies)</span>
+<span class="c"># -o /app/your-app-binary specifies the output path/name for the compiled app</span>
+<span class="k">RUN</span><span class="w"> </span><span class="nv">CGO_ENABLED</span><span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="nv">GOOS</span><span class="o">=</span>linux<span class="w"> </span>go<span class="w"> </span>build<span class="w"> </span>-a<span class="w"> </span>-installsuffix<span class="w"> </span>cgo<span class="w"> </span>-o<span class="w"> </span>/app/your-app-binary<span class="w"> </span>./cmd/your-main-package/main.go
+<span class="c"># Adjust &#39;./cmd/your-main-package/main.go&#39; to the actual entrypoint of your Go app</span>
+
+<span class="c"># --- Final Stage ---</span>
+<span class="c"># Use a minimal base image like Alpine or Scratch for the final container</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">alpine:latest</span>
+<span class="c"># FROM scratch # Smallest possible, but no shell/tools</span>
+
+<span class="c"># Alpine needs libc runtime library if not fully static build</span>
+<span class="k">RUN</span><span class="w"> </span>apk<span class="w"> </span>--no-cache<span class="w"> </span>add<span class="w"> </span>ca-certificates
+
+<span class="c"># Set working directory</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/root/</span>
+
+<span class="c"># Copy only the compiled binary from the build stage</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/app/your-app-binary<span class="w"> </span>.
+
+<span class="c"># What port the app listens on (check project code)</span>
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8080</span>
+
+<span class="c"># Command to run the executable</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;./your-app-binary&quot;</span><span class="p">]</span>
+</code></pre></div>
+<hr />
+<ul>
+<li><strong>Save the chosen template</strong> (after adapting it) as a file named exactly <code>Dockerfile</code> (no extension) in the project's root directory.</li>
+<li><strong>You MUST customize</strong> the template based on the project's specific structure, dependencies, entry point, and exposed port.</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-3-build-the-docker-image">Step 3: Build the Docker Image<a class="headerlink" href="#step-3-build-the-docker-image" title="Permanent link">&para;</a></h2>
+<p>Make sure you are still in the project's root directory in your terminal (the one with the <code>Dockerfile</code>).</p>
+<ol>
+<li>
+<p><strong>Build the image</strong> using the <code>docker build</code> command.</p>
+<ul>
+<li>The <code>-t</code> flag tags your image with a name (e.g., <code>my-app:latest</code>).</li>
+<li>The <code>.</code> indicates that the build context (including the <code>Dockerfile</code> and project files) is the current directory.</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>my-app:latest<span class="w"> </span>.
+</code></pre></div>
+<em>(You can replace <code>my-app</code> with a more descriptive name if you like.)</em></p>
+</li>
+<li>
+<p><strong>Wait</strong> for the build process to complete. It might download base images and run commands from the <code>Dockerfile</code>. Look for a <code>Successfully built &lt;image_id&gt;</code> and <code>Successfully tagged my-app:latest</code> message at the end.</p>
+</li>
+</ol>
+<h2 id="step-4-run-the-docker-container">Step 4: Run the Docker Container<a class="headerlink" href="#step-4-run-the-docker-container" title="Permanent link">&para;</a></h2>
+<p>Now, run a container from the image you just built.</p>
+<ol>
+<li>
+<p><strong>Run the container</strong> using the <code>docker run</code> command:</p>
+<ul>
+<li><code>-d</code>: Run in detached mode (in the background).</li>
+<li><code>-p &lt;host_port&gt;:&lt;container_port&gt;</code>: Map a port on your host machine to a port inside the container.<ul>
+<li>Replace <code>&lt;host_port&gt;</code> with a free port on your machine (e.g., <code>8080</code>).</li>
+<li>Replace <code>&lt;container_port&gt;</code> with the port the application <em>inside</em> the container listens on (the one specified in the <code>EXPOSE</code> instruction in the <code>Dockerfile</code>, e.g., <code>3000</code>, <code>5000</code>, <code>8080</code>).</li>
+</ul>
+</li>
+<li><code>--name &lt;container_name&gt;</code>: Give your container a memorable name (optional but helpful).</li>
+<li><code>my-app:latest</code>: The name of the image you built.</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="c1"># Example for Node.js app exposing 3000</span>
+docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:3000<span class="w"> </span>--name<span class="w"> </span>my-running-app<span class="w"> </span>my-app:latest
+
+<span class="c1"># Example for Python app exposing 5000</span>
+<span class="c1"># docker run -d -p 8080:5000 --name my-running-app my-app:latest</span>
+
+<span class="c1"># Example for Go app exposing 8080</span>
+<span class="c1"># docker run -d -p 8080:8080 --name my-running-app my-app:latest</span>
+</code></pre></div>
+*   <strong>Adjust the <code>-p</code> flag!</strong> Match the <code>&lt;container_port&gt;</code> to the <code>EXPOSE</code> value in your Dockerfile. Use a different <code>&lt;host_port&gt;</code> if <code>8080</code> is already in use on your machine.</p>
+</li>
+</ol>
+<h2 id="step-5-verify-the-deployment">Step 5: Verify the Deployment<a class="headerlink" href="#step-5-verify-the-deployment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Check running containers:</strong>
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps
+</code></pre></div>
+    You should see your container (<code>my-running-app</code>) listed with its status as <code>Up</code>.</p>
+</li>
+<li>
+<p><strong>Access the application:</strong> Open your web browser and go to <code>http://localhost:&lt;host_port&gt;</code> (using the <code>&lt;host_port&gt;</code> you specified in the <code>docker run -p</code> command).</p>
+<ul>
+<li>Example: <code>http://localhost:8080</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Check logs (if needed):</strong> If the application isn't working, check the container's logs for errors:
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>logs<span class="w"> </span>my-running-app
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="quick-cleanup-optional">Quick Cleanup (Optional)<a class="headerlink" href="#quick-cleanup-optional" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Stop the container:</strong>
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span>my-running-app
+</code></pre></div></li>
+<li><strong>Remove the container:</strong> (Must be stopped first)
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rm<span class="w"> </span>my-running-app
+</code></pre></div></li>
+<li><strong>Remove the image:</strong>
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rmi<span class="w"> </span>my-app:latest
+</code></pre></div></li>
+</ul>
 
 
 
